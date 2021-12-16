@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	<!-- 이걸 만들면 어노테이션(@)이 있는지 먼저확인한다. 있으면 처리를 해줌 -->
+	<!-- <context:annotation-config></context:annotation-config> -->
+	<context:component-scan base-package="com.spring.di"></context:component-scan>
+	
+	<!-- 클래스 생성 -->
+	<!-- c1은 TVRe~ 주소값을 가진 변수명 -->
+	<!-- value 는 변수 -->
+	<!-- TvRemoteControl c1 = new  TvRemoteControl("LG"); -->
+	<bean id="c1" class="com.spring.di.TvRemoteControl">
+		<!-- property : set -->
+		<property name="company" value="LG"></property>
+	<!-- 기본생성자가 없고 setters를 먼저 쓰기때문에 기본생성자가 없으면 오류가 뜨는것 -->
+	</bean>
+	<bean id="c2" class="com.spring.di.TvRemoteControl">
+		<property name="company" value="SAMSUNG"></property>
+	</bean>
+	<bean id="c3" class="com.spring.di.AirConditionerRemoteControl">
+		<property name="company" value="SAMSUNG"></property>
+	</bean> 
+	
+	
+	<!-- ref 는 객체임 -->
+	<!-- constructor-arg는 생성자에 들어갈 매개변수 -->
+	<!-- @ -->
+	<bean id="centralControl" class="com.spring.di.CentralController">
+		<!-- <constructor-arg name="control1" ref="c1"></constructor-arg>
+		<constructor-arg name="control2" ref="c2"></constructor-arg> -->
+		
+	</bean>
+
+</beans>

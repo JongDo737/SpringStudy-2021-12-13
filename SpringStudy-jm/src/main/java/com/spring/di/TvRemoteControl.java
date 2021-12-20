@@ -4,19 +4,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("c2")
-public class TvRemoteControl implements RemoteControl {
-
+public class TvRemoteControl implements RemoteControl{
+	
 	@Value("LG")
 	private String company;
-
-	public TvRemoteControl() {
-	}
-
-	public TvRemoteControl(String company) {
-		super();
-		this.company = company;
-	}
-
+	
 	public String getCompany() {
 		return company;
 	}

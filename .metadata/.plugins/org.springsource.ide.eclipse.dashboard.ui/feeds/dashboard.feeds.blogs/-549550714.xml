@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Spring</title>
+  <link rel="alternate" href="https://spring.io/blog" />
+  <link rel="self" href="https://spring.io/blog.atom" />
+  <id>http://spring.io/blog.atom</id>
+  <icon>https://spring.io/favicon.ico</icon>
+  <updated>2021-12-16T04:00:00Z</updated>
+  <entry>
+    <title>Spring Tips: @Controllers and GraphQL</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/15/spring-tips-controllers-and-graphql" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-16:4643</id>
+    <updated>2021-12-16T04:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, we continue our tour of all things &lt;code&gt;@Controller&lt;/code&gt; by looking at the nascent &lt;a href="https://github.com/spring-projects/spring-grapqhl"&gt;Spring GraphQL&lt;/a&gt; project&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/eVqmB2hsIVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 14th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/14/this-week-in-spring-december-14th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-14:4642</id>
+    <updated>2021-12-14T19:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! How are you? Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I&amp;rsquo;m doing alright! It&amp;rsquo;s noon as I write this, and I&amp;rsquo;ve got GSUG joint presentation with &lt;a href="https://twitter.com/mraible"&gt;Matt Raible&lt;/a&gt; later today. Then, tonight at midnight my time to 5 am or 6 am, I&amp;rsquo;m kicking off a two-day workshop for GOTO! I look forward to seeing ya there! Anyway, we&amp;rsquo;ve got a lot to cover so let&amp;rsquo;s dive into it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Read this first! If you&amp;rsquo;ve been living under a rock, you may not have heard of the recent Log4J2 vulnerability. If you&amp;rsquo;re using the default, out-of-the-box Spring Boot logging support, then this does &lt;em&gt;not&lt;/em&gt; apply to you! But, if you are using Log4j2, specifically, then you need to read this post on &lt;a href="https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot"&gt;Log4j2 and Spring Boot&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/brunoborges/status/1469426918550245377?s=12"&gt;Bruno Borges tweets this very simple workaround for those of you who are using Log4j2 and can&amp;rsquo;t change the startup scripts of your application afflicted by the Log4j2 exploit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Once you&amp;rsquo;re sure your applications are healthy and happy, check out the new Spring Native 0.11 release! And its new AOT engine, which &lt;a href="https://spring.io/blog/2021/12/09/new-aot-engine-brings-spring-native-to-the-next-level"&gt; brings Spring Native to the Next Level&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Don&amp;rsquo;t want to read the blog? I did a &lt;a href="https://twitter.com/SpringTipsLive"&gt;Spring Tips (@SpringTipsLive) video&lt;/a&gt; you can &lt;a href="https://www.youtube.com/watch?v=DVo5vmk5Cuw&amp;feature=emb_title"&gt;watch to see everything new and nice in Spring Native 0.11&lt;/a&gt;. This video goes deep, starting with the basics, looking at performance numbers (dramatic reductions in compile-time, startup time, and runtime memory footprint) for some typical workloads, and then looks at the new AOT engine&amp;rsquo;s extension planes.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/09/a-bootiful-podcast-transformative-leader-brilliant-technologist-my-friend-patrick-chanezon"&gt;A Bootiful Podcast: Transformative leader, brilliant technologist, my friend, Patrick Chanezon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/08/secure-communications-end-to-end-for-spring-boot-apps-in-zero-trust-environment"&gt;Secure communications end-to-end for Spring Boot apps ? in Zero Trust environment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/08/spring-cloud-gateway-and-grpc"&gt;Spring Cloud Gateway and gRPC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/14/spring-cloud-square-0-4-0-rc1-is-available"&gt;Spring Cloud Square 0.4.0-RC1 is available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/14/spring-graphql-1-0-0-m4-released"&gt;Spring GraphQL 1.0.0-M4 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/embed/uJwx8km1N2w"&gt;Spring Native for Serverless Java&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springtools4/status/1468665152140685320?s=12"&gt;Spring Tools 4 on Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/08/spring-tools-4-13-0-released"&gt;Spring Tools 4.13.0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/rey_antoine/status/1469686287808737280?s=12"&gt;Both Vaadin Flow and Vaadin Fusion versions of the Spring Petclinic sample have joined the Spring Petclinic Community &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/ghillert/status/1468401392570097666?s=12"&gt;The amazing Gunnar Hillert has posted the Oracle Coherence Sock Shop Microservices example app for Spring Boot, which adds better Tracing support using Spring Cloud Sleuth for Jaeger and Zipkin. This is based on an original app from Weaveworks.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/rotnroll666/status/1470007457044967424?s=12"&gt;Neo4j&amp;rsquo;s Michael Simons has this great tweet: Did you know that Neo4js releases the Neo4j Java driver as a slim option, under the coordinates &lt;code&gt;org.neo4j.driver&lt;/code&gt;:&lt;code&gt;neo4j-java-driver-slim&lt;/code&gt;, without shaded dependencies? This might be handy if your project already has a dependency to Project Reactor or Netty. &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/rorypreddy/status/1470090509549023240?s=12"&gt;Microsoft&amp;rsquo;s Rory Preddy tweeted that a demo-heavy Monitoring Java on Azure series is now available. Besides data migration, end-to-end monitoring is the #1 challenge for developers migrating Spring Boot apps to the cloud - in this series, we demystify all!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/sharat_chander/status/1468849392404811780?s=21"&gt;Now Available: JDK migration guide Includes significant changes &amp;amp; enhancements in #JDK17 ?? Move your Java version forward&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/piotr_minkowski/status/1468874124575580160?s=12"&gt;Piotr Mi?kowski has a nice little tip: If you use a dedicated management port for Actuator endpoints starting from Spring Boot 2.6 you may expose a particular health group on the server main port under the additional path. It is useful in #Kubernetes liveness and readiness probes.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=rS2AhcIPQEs"&gt;Tanzu Tuesdays 74 - Carvel support in Kubeapps - New pluggable gRPC-based architecture - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/JavaAtMicrosoft/status/1469017124328730627"&gt;Azure Spring Cloud scales #SpringBoot apps to billions of requests per day without the hassle of managing infrastructure. See it in action &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1468962596879417355"&gt; This is a great, video overview of VMware¡¯s free, open-source Kubernetes distro, the Tanzu Community Edition. &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A nice report on the Microsoft Tech Community: &lt;a href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/2021-report-how-developers-migrate-spring-apps-to-the-cloud/ba-p/3021421"&gt;How developers migrate Spring apps to the cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Square 0.4.0-RC1 is available</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/14/spring-cloud-square-0-4-0-rc1-is-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Olga Maciaszek-Sharma</name>
+    </author>
+    <id>tag:spring.io,2021-12-14:4640</id>
+    <updated>2021-12-14T18:24:22Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that the Release Candidate 1 (RC1) of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud Square&lt;/a&gt; 0.4.0 is available today. The release can be found in &lt;a href="https://repo.spring.io/milestone/"&gt;Spring Milestone&lt;/a&gt; repository. You can check out the 0.4.0-RC1 &lt;a href="https://github.com/spring-projects-experimental/spring-cloud-square/releases/tag/v0.4.0-RC1"&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is primarily a bugfix release. See all issues included in this release &lt;a href="https://github.com/spring-projects-experimental/spring-cloud-square/milestone/2?closed=1"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#notable-changes-in-rc1" class="anchor" name="notable-changes-in-rc1"&gt;&lt;/a&gt;Notable changes in RC1:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Cloud Sleuth integration for OkHttpClient &lt;a href="https://github.com/spring-projects-experimental/spring-cloud-square/issues/36"&gt;#36&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The documentation for this milestone can be found &lt;a href="https://spring-projects-experimental.github.io/spring-cloud-square/docs/current/reference/html/index.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring GraphQL 1.0.0-M4 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/14/spring-graphql-1-0-0-m4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Brian Clozel</name>
+    </author>
+    <id>tag:spring.io,2021-12-14:4641</id>
+    <updated>2021-12-14T16:04:00Z</updated>
+    <content type="html">&lt;p&gt;The Spring GraphQL team has just released the 4th milestone towards a 1.0.0 release. Thanks to all contributors!&lt;/p&gt;
+&lt;p&gt;In this milestone, we have further improved the annotation programming model and extended the Spring Data support that were provided &lt;a href="https://spring.io/blog/2021/10/28/spring-graphql-1-0-0-m3-released"&gt;in the previous milestones&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#interface-projections-for-graphql-arguments" class="anchor" name="interface-projections-for-graphql-arguments"&gt;&lt;/a&gt;Interface Projections for GraphQL Arguments&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re familiar with Spring Data&amp;rsquo;s &lt;a href="https://docs.spring.io/spring-data/commons/docs/current/reference/html/#projections.interfaces"&gt;Interface-based Projections&lt;/a&gt;, then this new feature will make perfect sense: you can use a well-defined interface to work with GraphQL arguments, without the need for any Object implementation. &lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Controller&#xD;
+public class BookController {&#xD;
+&#xD;
+    @MutationMapping&#xD;
+    public Book addBook(@Argument BookInputProjection bookInput) {&#xD;
+        // ...&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+@ProjectedPayload&#xD;
+interface BookInputProjection {&#xD;
+&#xD;
+    String getName();  // this maps to &amp;quot;name&amp;quot; argument&#xD;
+&#xD;
+    @Value(&amp;quot;#{target.author + &amp;#39; &amp;#39; + target.name})&#xD;
+    String getAuthorAndName();&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can learn more about this in the &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M4/reference/html/#controllers-schema-mapping-projectedpayload-argument"&gt;@ProjectedPayload Interface&lt;/a&gt; section of the documentation.&lt;/p&gt;&lt;h2&gt;&lt;a href="#query-by-example-support" class="anchor" name="query-by-example-support"&gt;&lt;/a&gt;Query By Example Support&lt;/h2&gt;
+&lt;p&gt;Spring GraphQL now supports use of the Query by Example, Spring Data, extension for data fetching. To use this extension, you don&amp;rsquo;t need to write queries through store-specific query languages, but simply provide an example of a domain object with populated fields. The repository implementation will do the rest!&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;QueryByExampleDataFetcher&lt;/code&gt; makes it easy to create a &lt;code&gt;DataFetcher&lt;/code&gt; that binds GraphQL arguments onto an example object and then uses that to query for the data. There is also a feature for automated discovery of Query By Example repositories, based on the &lt;code&gt;@GraphQlRepository&lt;/code&gt; annotation, and mapping to top-level GraphQL queries.&lt;/p&gt;
+&lt;p&gt;If your data store of choice supports it, this adds another way to leverage your Spring Data repositories in a Spring GraphQL application. See &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M4/reference/html/#data-querybyexample"&gt;the documentation&lt;/a&gt; for more details.&lt;/p&gt;&lt;h2&gt;&lt;a href="#standard-bean-validation-for-graphql-arguments" class="anchor" name="standard-bean-validation-for-graphql-arguments"&gt;&lt;/a&gt;Standard Bean Validation for GraphQL Arguments&lt;/h2&gt;
+&lt;p&gt;On top of the existing constraints enforced at the schema level, you can now use Standard Bean Validation to validate GraphQL arguments that are declared as controller method parameters. If the argument doesn&amp;rsquo;t match the defined constraints, a validation exception is thrown and written to the relevant &amp;ldquo;errors&amp;rdquo; section of the GraphQL response. &lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Controller&#xD;
+public class BookController {&#xD;
+&#xD;
+    @MutationMapping&#xD;
+    public Book addBook(@Argument @Valid BookInput bookInput) {&#xD;
+        // ...&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+public class BookInput {&#xD;
+&#xD;
+    @NotNull&#xD;
+    private String title;&#xD;
+&#xD;
+    @NotNull&#xD;
+    @Size(max=13)&#xD;
+    private String isbn;&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is similar to the existing support in Spring MVC or Spring WebFlux, you can &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M4/reference/html/#controllers-schema-mapping-validation"&gt;learn more about &lt;code&gt;@Argument&lt;/code&gt; validation&lt;/a&gt; in the reference docs.&lt;/p&gt;&lt;h3&gt;&lt;a href="#context-access" class="anchor" name="context-access"&gt;&lt;/a&gt;Context Access&lt;/h3&gt;
+&lt;p&gt;A new &lt;code&gt;@ContextValue&lt;/code&gt; annotation provides convenient access to values in the &lt;code&gt;GraphQLContext&lt;/code&gt; from controller methods.&lt;/p&gt;
+&lt;p&gt;Controller methods can access the authenticated user by declaring a method argument of type &lt;code&gt;javax.security.Principal&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@BatchMapping&lt;/code&gt; methods can access the same &lt;code&gt;GraphQLContext&lt;/code&gt; that is also available for &lt;code&gt;@SchemaMapping&lt;/code&gt; methods and to any &lt;code&gt;DataFetcher&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#more" class="anchor" name="more"&gt;&lt;/a&gt;More&lt;/h3&gt;
+&lt;p&gt;More &lt;a href="https://github.com/spring-projects/spring-graphql/milestone/5?closed=1"&gt;improvements and fixes made their way into their release&lt;/a&gt; and they&amp;rsquo;re available right now in the new Spring GraphQL 1.0.0-M4 release from the Spring Milestone repository.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in helping out, you can &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M4/reference/html/#boot-graphql"&gt;get started with Spring GraphQL&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;raise issues on our GitHub project&lt;/a&gt;.&lt;br/&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.0-M4/reference/html/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Log4J2 Vulnerability and Spring Boot</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2021-12-10:4639</id>
+    <updated>2021-12-10T20:00:00Z</updated>
+    <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Updates&lt;/strong&gt;: Since this blog post has been published, a &lt;a href="https://logback.qos.ch/news.html"&gt;new logback 1.2.8 version has been published&lt;/a&gt;. While this fixes a security issue, prerequisites for exploits are very different as they &amp;ldquo;requires write access to logback&amp;rsquo;s configuration file&amp;rdquo;.&lt;br/&gt;Log4J also released a new 2.16.0 version with fixes for &lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2021-45046"&gt;CVE-2021-45046&lt;/a&gt;.&lt;br/&gt;Our upcoming releases will pick up these new versions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As you may have seen in the news, a new zero-day exploit has been reported against the popular Log4J2 library which can allow an attacker to remotely execute code. The vulnerability has been reported with &lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228"&gt;CVE-2021-44228&lt;/a&gt; against the &lt;code&gt;log4j-core&lt;/code&gt; jar and has been fixed in &lt;a href="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.15.0/"&gt;Log4J v2.15.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Spring Boot users are only affected by this vulnerability if they have &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.logging.log4j"&gt;switched the default logging system to Log4J2&lt;/a&gt;. The &lt;code&gt;log4j-to-slf4j&lt;/code&gt; and &lt;code&gt;log4j-api&lt;/code&gt; jars that we include in &lt;code&gt;spring-boot-starter-logging&lt;/code&gt; cannot be exploited on their own. Only applications using &lt;code&gt;log4j-core&lt;/code&gt; and including user input in log messages are vulnerable.&lt;/p&gt;
+&lt;p&gt;Our upcoming v2.5.8 &amp;amp; v2.6.2 releases (due Dec 23, 2021) will pick up Log4J v2.16.0, but since this is such a serious vulnerability you may want to override our dependency management and upgrade your Log4J2 dependency sooner.&lt;/p&gt;&lt;h2&gt;&lt;a href="#maven" class="anchor" name="maven"&gt;&lt;/a&gt;Maven&lt;/h2&gt;
+&lt;p&gt;For Maven users, you can follow &lt;a href="https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#using"&gt;these instructions&lt;/a&gt; and the set the &lt;code&gt;log4j2.version&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;For example, if you are using our parent POM you can set the &lt;code&gt;log4j2.version&lt;/code&gt; property:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;properties&amp;gt;&#xD;
+    &amp;lt;log4j2.version&amp;gt;2.16.0&amp;lt;/log4j2.version&amp;gt;&#xD;
+&amp;lt;/properties&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you are not using our parent, but instead are importing the &lt;code&gt;spring-boot-dependencies&lt;/code&gt; BOM, you&amp;rsquo;ll need to use a &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; section:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+    &amp;lt;dependencies&amp;gt;&#xD;
+        &amp;lt;dependency&amp;gt;&#xD;
+            &amp;lt;groupId&amp;gt;org.apache.logging.log4j&amp;lt;/groupId&amp;gt;&#xD;
+            &amp;lt;artifactId&amp;gt;log4j-bom&amp;lt;/artifactId&amp;gt;&#xD;
+            &amp;lt;version&amp;gt;2.16.0&amp;lt;/version&amp;gt;&#xD;
+            &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+            &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+        &amp;lt;/dependency&amp;gt;&#xD;
+        ... other dependencies including spring-boot-dependencies&#xD;
+    &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To check that the override as been applied run &lt;code&gt;./mvnw dependency:list | grep log4j&lt;/code&gt; and check that the version is 2.16.0.&lt;/p&gt;&lt;h2&gt;&lt;a href="#gradle" class="anchor" name="gradle"&gt;&lt;/a&gt;Gradle&lt;/h2&gt;
+&lt;p&gt;For Gradle users, you can follow &lt;a href="https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#managing-dependencies.dependency-management-plugin.customizing"&gt;these instructions&lt;/a&gt; and update the version property, import the BOM or use a&lt;code&gt;resolutionStrategy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For most users, setting the &lt;code&gt;log4j2.version&lt;/code&gt; property will be sufficient:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint gradle"&gt;ext[&amp;#39;log4j2.version&amp;#39;] = &amp;#39;2.16.0&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you&amp;rsquo;re using Gradle&amp;rsquo;s platform support instead of our dependency management plugin then you can add a dependency to the Log4J BOM:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint gradle"&gt;implementation(platform(&amp;quot;org.apache.logging.log4j:log4j-bom:2.16.0&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And if you can¡¯t use either of those methods then you can declare a &lt;code&gt;resolutionStrategy&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint gradle"&gt;configurations.all {&#xD;
+	resolutionStrategy.eachDependency { DependencyResolveDetails details -&amp;gt;&#xD;
+		if (details.requested.group == &amp;#39;org.apache.logging.log4j&amp;#39;) {&#xD;
+			details.useVersion &amp;#39;2.16.0&amp;#39;&#xD;
+		}&#xD;
+	}&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Whichever method you choose, to check that the override has been applied you can run &lt;code&gt;./gradlew dependencyInsight --dependency log4j-core&lt;/code&gt; and look for version 2.16.0.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>A Bootiful Podcast: Transformative leader, brilliant technologist, my friend, Patrick Chanezon</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/09/a-bootiful-podcast-transformative-leader-brilliant-technologist-my-friend-patrick-chanezon" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-09:4638</id>
+    <updated>2021-12-09T20:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! This week, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to transformational leader, my old boss, legendary technologist, and friend &lt;a href="https://twitter.com/chanezon"&gt;Patrick Chanezon (@chanezon)&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe title="Transformative leader, brilliant technologist, my friend, Patrick Chanezon" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=7s93i-115064e-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>New AOT Engine Brings Spring Native to the Next Level</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/09/new-aot-engine-brings-spring-native-to-the-next-level" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>S?bastien Deleuze</name>
+    </author>
+    <id>tag:spring.io,2021-12-09:4637</id>
+    <updated>2021-12-09T13:00:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the release of &lt;a href="https://github.com/spring-projects-experimental/spring-native/releases/tag/0.11.0"&gt;Spring Native 0.11&lt;/a&gt;, which provides native support for Spring Boot 2.6. This ambitious release is the result of five months of hard work by the Spring team, who have been working on a brand new architecture to bring Spring support for creating native executables with GraalVM to the next level. You can already try it on &lt;a href="https://start.spring.io/#!dependencies=native"&gt;start.spring.io&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Learn more about Spring Native 0.11 and see it in action in this new &lt;a href="https://twitter.com/SpringTipsLive"&gt;Spring Tips&lt;/a&gt; video from Spring Developer Advocate Josh Long.&lt;/p&gt;
+&lt;/div&gt;
+&lt;iframe style="display: block; margin: auto;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/DVo5vmk5Cuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="new-ahead-of-time-engine"&gt;&lt;a class="anchor" href="#new-ahead-of-time-engine"&gt;&lt;/a&gt;New Ahead-Of-Time Engine&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The biggest change is undoubtedly the introduction of a new AOT engine that performs a deep analysis of your Spring application at build-time to transform and optimize your application and generate the required GraalVM native configuration. Those transformations are performed by Maven and Gradle Spring AOT plugins.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://static.spring.io/blog/sdeleuze/20211209/spring-boot-native.png" alt="spring boot native"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Taking a deeper look, the AOT engine evaluates conditions at build time in order to generate an optimized application context and Spring factories (the plugin system behind Spring Boot) specifically crafted for your application. In practice, that means:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Less Spring infrastructure to execute at runtime&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fewer conditions to evaluate at runtime&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Less reflection, since &lt;a href="https://spring.io/blog/2017/03/01/spring-tips-programmatic-bean-registration-in-spring-framework-5"&gt;programmatic bean registration&lt;/a&gt; is used&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The AOT engine infers the native configuration required to run your application as a native executable based on the beans identified as active, knowledge of the Spring programming model, and native hints bundled with Spring Native or provided by your application itself.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://static.spring.io/blog/sdeleuze/20211209/aot-architecture.png" alt="aot architecture"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We want to give special thanks to &lt;a href="https://spring.io/team/snicoll"&gt;St?phane Nicoll&lt;/a&gt; who led the design and the implementation of this new AOT engine.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="reduced-memory-footprint"&gt;&lt;a class="anchor" href="#reduced-memory-footprint"&gt;&lt;/a&gt;Reduced Memory Footprint&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A key advantage of the AOT engine is that it supports smaller memory footprints for native executable because the native configuration is more accurate, less reflection is required, and less Spring infrastructure is required at runtime.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Native 0.11 offers an average of between &lt;strong&gt;20%&lt;/strong&gt; and &lt;strong&gt;26%&lt;/strong&gt; footprint reduction compared to Spring Native 0.10! The following image shows data points for a few sample applications:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://static.spring.io/blog/sdeleuze/20211209/native-rss.png" alt="native rss"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="faster-startup"&gt;&lt;a class="anchor" href="#faster-startup"&gt;&lt;/a&gt;Faster Startup&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Startup times are &lt;strong&gt;16%&lt;/strong&gt; to &lt;strong&gt;35%&lt;/strong&gt; faster in Spring Native 0.11 compared to 0.10 because some processing has moved from runtime to build time. There is still room for improvement since we could not fine-tune Spring Boot and Spring Framework¡¯s internal architecture in this minor version update.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://static.spring.io/blog/sdeleuze/20211209/native-startup.png" alt="native startup"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="improved-compatibility"&gt;&lt;a class="anchor" href="#improved-compatibility"&gt;&lt;/a&gt;Improved Compatibility&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The AOT engine is also much more accurate because it doesn&amp;#8217;t try to analyze Spring annotations or the various types to replicate what Spring does at runtime. Instead, it forks a new process where it creates and introspects an application context at build-time (without starting it). That allows use of a subset of what Spring Framework does at runtime and works at the bean definition level, which is much more accurate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="runtime-flexibility"&gt;&lt;a class="anchor" href="#runtime-flexibility"&gt;&lt;/a&gt;Runtime Flexibility&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Performing those optimizations at build time means that there is less runtime flexibility than with the regular Spring Boot auto-configuration model. You can still change the HTTP port or the log level of your application when running an already compiled Spring Boot application, but you cannot add new beans at runtime by using a profile, for example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;That¡¯s why, on the JVM, the AOT mode is optional. That¡¯s an optimization that you can use if it fits with your needs. On native (which is, by design, much less dynamic at runtime), it is mandatory. Also, keep in mind that conditions are evaluated at build time for now. We will likely make that more flexible in the future so that it should fit with most use cases.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="extension-points"&gt;&lt;a class="anchor" href="#extension-points"&gt;&lt;/a&gt;Extension Points&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The new engine offers a pluggable and modular architecture that users (like you, or the Spring project teams) can use to support various new features.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For example, see this implementation of the &lt;code&gt;BeanFactoryNativeConfigurationProcessor&lt;/code&gt; extension point, which automatically creates a class proxy ahead of time for beans annotated with &lt;code&gt;@RequestScope&lt;/code&gt; or &lt;code&gt;@Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;public class ScopeNativeConfigurationProcessor implements BeanFactoryNativeConfigurationProcessor {
+
+   @Override
+   public void process(ConfigurableListableBeanFactory beanFactory, NativeConfigurationRegistry registry) {
+       new BeanFactoryProcessor(beanFactory).processBeansWithAnnotation(Scope.class, (beanName, beanType) -&amp;gt; {
+           Scope scope = beanFactory.findAnnotationOnBean(beanName, Scope.class);
+           if (scope.proxyMode() == ScopedProxyMode.TARGET_CLASS) {
+               registry.proxy().add(NativeProxyEntry.ofClass(beanType, ProxyBits.NONE,
+                       ScopedObject.class, Serializable.class, AopInfrastructureBean.class));
+           }
+      });
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;code&gt;NativeConfiguration&lt;/code&gt; extension point has been refined to offer an API by using &lt;code&gt;NativeConfigurationRegistry&lt;/code&gt; as well:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;public interface NativeConfiguration {
+   default boolean isValid(AotOptions aotOptions) { return true; }
+   default void computeHints(NativeConfigurationRegistry registry, AotOptions aotOptions) { return; }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Those extensions points are defined and then discovered in &lt;code&gt;META-INF/spring.factories&lt;/code&gt;, so &lt;a href="https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/#_programmatic_hints"&gt;you can provide your own&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="aot-testing-support"&gt;&lt;a class="anchor" href="#aot-testing-support"&gt;&lt;/a&gt;AOT Testing Support&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A very significant part of our work on Spring Native 0.11 has been on implementing testing support for the AOT codepath, in order to bring native testing support to a whole new level. The result is a very significant increase in compatibility, with many more kinds of tests supported.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Combined with the great JUnit 5 native support provided by the &lt;a href="https://github.com/graalvm/native-build-tools"&gt;Native Build Tools&lt;/a&gt;, it lets you run your Spring Boot, Spring Framework, or just plain JUnit tests, like on the JVM.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Unrelated to Spring, Mockito is not supported yet, but there is ongoing work to make it possible for it to work in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="aot-on-the-jvm"&gt;&lt;a class="anchor" href="#aot-on-the-jvm"&gt;&lt;/a&gt;AOT on the JVM&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Performing AOT transformation on an application that will run on the JVM has two key benefits.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The first one is to be able to easily debug the code that will run on native on the JVM (main application or tests) in your IDE, for example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The second advantage is better efficiency. At the moment, it provides around a &lt;strong&gt;4%&lt;/strong&gt; to &lt;strong&gt;17%&lt;/strong&gt; smaller footprint.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://static.spring.io/blog/sdeleuze/20211209/jvm-rss.png" alt="jvm rss"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;AOT mode also accelerates the application startup by &lt;strong&gt;3%&lt;/strong&gt; to &lt;strong&gt;24%&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://static.spring.io/blog/sdeleuze/20211209/jvm-startup.png" alt="jvm startup"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Note that, until now, we had no specific focus on JVM efficiency, so there may well be opportunities to improve in later releases.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="bellsoft-liberica-nik"&gt;&lt;a class="anchor" href="#bellsoft-liberica-nik"&gt;&lt;/a&gt;Bellsoft Liberica NIK&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://bell-sw.com/pages/liberica-native-image-kit/"&gt;Bellsoft Liberica Native Image Kit&lt;/a&gt; (NIK) is a native-image compiler distribution based on &lt;a href="https://github.com/oracle/graal"&gt;GraalVM open-source repository&lt;/a&gt; and Liberica JDK. As of Spring Native 0.11, it is used by default for Buildpacks native support, which is consistent with the JDK side, where Liberica JDK is used by default. It can also be installed locally by using its &lt;a href="https://sdkman.io/"&gt;SDKMAN&lt;/a&gt; integration or by &lt;a href="https://bell-sw.com/pages/downloads/native-image-kit/"&gt;downloading&lt;/a&gt; and installing it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Earlier this year, the team &lt;a href="https://tanzu.vmware.com/content/blog/vmware-tanzu-enterprise-support-spring-boot-native-applications-bellsoft-liberica-nik"&gt;announced&lt;/a&gt;, together with BellSoft, that VMware customers who use the Liberica Native Image Kit can run their Spring applications as native executables and be confident that they are fully supported.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="new-baseline"&gt;&lt;a class="anchor" href="#new-baseline"&gt;&lt;/a&gt;New Baseline&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Native 0.11 also gave us the opportunity to provide a new baseline based on &lt;a href="https://spring.io/blog/2021/11/19/spring-boot-2-6-is-now-available"&gt;Spring Boot 2.6&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://www.graalvm.org/release-notes/21_3/"&gt;GraalVM 21.3&lt;/a&gt; provides support for both Java 11 and Java 17, and leverages &lt;a href="https://www.graalvm.org/reference-manual/native-image/Reflection/#conditional-configuration"&gt;conditional native configuration&lt;/a&gt; and other related refinements to allow a smaller footprint and better native support for the JVM ecosystem. The Java 8 flavor of GraalVM is not provided anymore since it is too old to be reasonably maintained, but you can still compile most Java 8 applications with the Java 11 flavor of GraalVM. &lt;a href="https://github.com/graalvm/native-build-tools"&gt;Native Build Tools&lt;/a&gt; 0.9.8 is supported, and we continue our collaboration to refine and improve it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-boot-3-first-class-native-support"&gt;&lt;a class="anchor" href="#spring-boot-3-first-class-native-support"&gt;&lt;/a&gt;Spring Boot 3 First-Class Native Support&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I think that Spring Native 0.11 achieves its goal of providing a mature native option for Spring Boot. The Spring team can now focus on the next major step: refined native support as part of Spring Framework 6, Spring Boot 3, and related portfolio projects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Keep in mind that all we did on Spring Native was done in close collaboration with other Spring projects but without deep architectural changes. With AOT and native becoming major themes of Spring Boot 3 and Spring Framework 6, the quality, maintainability, and ease of use of those features will reach a new level. The AOT engine will be refined and integrated directly into Spring Framework. Other projects, such as Spring Data or Spring Security, will be able to provide native support  (and to test it) for their scope, and Spring Boot will provide out of the box AOT and native executables support in its plugins and documentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://static.spring.io/blog/sdeleuze/20211209/boot3-aot-architecture.png" alt="boot3 aot architecture"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Our collaboration with the GraalVM team and the JVM ecosystem is going to increase in order to provide native configuration for various libraries outside of Spring, either in those libraries directly or in a native configuration repository directly integrated at the Native Build Tools level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We plan to start providing GraalVM native support out of the box in &lt;a href="https://github.com/spring-projects/spring-boot/milestone/242"&gt;Spring Boot 3 milestone 2&lt;/a&gt;, targeted for late March 2022, leveraging all that we learned while working on Spring Native. General Availability is planned for late 2022. We have lots of exciting plans ahead, but, for now, let¡¯s take the time to celebrate this release with the members of the Spring team and of the Spring community who contributed. Cheers!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tools 4.13.0 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/08/spring-tools-4-13-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2021-12-08:4636</id>
+    <updated>2021-12-08T19:30:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.13.0 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#major-changes-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="major-changes-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;major changes to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;updated to Eclipse 2021-12 release (including support for Java 17) (&lt;a href="https://www.eclipse.org/eclipseide/2021-12/"&gt;new and noteworthy&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;builds for Apple Silicon platform (ARM M1) are available now from the regular download page&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;&lt;a href="#additional-changes" class="anchor" name="additional-changes"&gt;&lt;/a&gt;additional changes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: STS 4.12.0 (for eclipse) *.yml can&amp;rsquo;t automatic prompt (&lt;a href="https://github.com/spring-projects/sts4/issues/690"&gt;#690&lt;/a&gt;)
+&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: A StackOverFlow error for serializable Kotlin data class for autocompletion in the Eclipse IDE (&lt;a href="https://github.com/spring-projects/sts4/issues/693"&gt;#693&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: Typescript comparison: An internal error occurred during: &amp;ldquo;LSP4E Linked Editing Highlight&amp;rdquo; (&lt;a href="https://github.com/spring-projects/sts4/issues/700"&gt;#700&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: js syntax highlight disabled by STS4 (&lt;a href="https://github.com/spring-projects/sts4/issues/702"&gt;#702&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: Cannot copy/paste from ANSI console without escape sequences (&lt;a href="https://github.com/spring-projects/sts4/issues/667"&gt;#667&lt;/a&gt;) - fixed in ANSI Color Console project thanks to @mihnita&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are updating an existing Spring Tools 4 installation, please make sure you to prepare your installation propertly this time: &lt;a href="https://twitter.com/springtools4/status/1468587842838355980"&gt;https://twitter.com/springtools4/status/1468587842838355980&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2021-12-08-4130-release-incl-language-servers-version-1290"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2021-12-08-4130-release-incl-language-servers-version-1290&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Tools 4.13.1 is scheduled to be released in early Feb 2022.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Secure communications end-to-end for Spring Boot apps ? in Zero Trust environment</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/08/secure-communications-end-to-end-for-spring-boot-apps-in-zero-trust-environment" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-08:4635</id>
+    <updated>2021-12-08T18:00:00Z</updated>
+    <content type="html">&lt;h1&gt;&lt;a href="#secure-communications-end-to-end-for-spring-boot-apps-in-a-zero-trust-environment" class="anchor" name="secure-communications-end-to-end-for-spring-boot-apps-in-a-zero-trust-environment"&gt;&lt;/a&gt;Secure communications end-to-end for Spring Boot apps - in a Zero Trust environment&lt;/h1&gt;
+&lt;p&gt;Hi, Spring fans! Today, we are excited to announce the general availability of all the features to secure communications end-to-end for Spring Boot apps ? in a Zero Trust environment. You can secure communications end-to-end or terminate transport level security at any communication point for Spring Boot apps. You can also automate the provisioning and configuration for all the Azure resources needed for securing communications.&lt;/p&gt;
+&lt;p&gt;Implementing secure communications as part of your solution architecture can be challenging. Many customers manually rotate their certificates or create their own solutions to automate provisioning and configuration. Even then, there is still data exfiltration risk ? say unauthorized copying or transfer of data from server systems. With Azure Spring Cloud, all of this is handled for you; there is no need to figure out the difficult details. Azure Spring Cloud abstracts away most of the complexity, leaving secure communications as configurable and automatable options in the service.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;¡°Implementing end-to-end encryption and Zero Trust have been at the top of the list of security requirements for our new API platform. Neither requirement was ever achievable on our old platform. Azure Spring Cloud, and its built-in integrations with services like Azure Key Vault and Managed Identities, will finally help us to meet those requirements in an easily automated and manageable way.¡± ? Claus Lund, Infrastructure Engineering Lead, &lt;a href="https://www.nationallife.com/"&gt;National Life Group&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;¡°For Liantis, having secure end-to-end communications is a non-negotiable in our line of business dealing with very sensitive financial, medical and payroll data. Again, Azure Spring Cloud delivers on its promise to abstract most of the complexity, reduce operational overhead associated with certificate provisioning, configuration and certificate rotation in a seamless way using a simple and straightforward integration with Azure Key Vault.¡± - Kurt Roggen, Infrastructure and Security Architect, &lt;a href="https://www.liantis.be/nl?overlay=select-language"&gt;Liantis&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#secure-internet-communications" class="anchor" name="secure-internet-communications"&gt;&lt;/a&gt;Secure Internet communications&lt;/h2&gt;
+&lt;p&gt;The TLS/SSL protocol establishes identity and trust, and encrypts communications of all types, making secure communications possible - particularly Web traffic carrying commerce data and personally identifiable information.&lt;/p&gt;
+&lt;p&gt;You can use any types of SSL certificates ? certificates issued by a certificate authority, extended validation certificate, wildcard certificates with support for any number of sub domains, or self-signed certificates for dev and testing environments.&lt;/p&gt;&lt;h2&gt;&lt;a href="#zero-trust-securely-load-certificates" class="anchor" name="zero-trust-securely-load-certificates"&gt;&lt;/a&gt;Zero Trust ? securely load certificates&lt;/h2&gt;
+&lt;p&gt;Based on the principle of &amp;ldquo;never trust, always verify and credential-free&amp;rdquo;, &lt;a href="https://docs.microsoft.com/en-us/security/zero-trust/"&gt;Zero Trust&lt;/a&gt; helps to secure all communications by eliminating unknown and un-managed certificates, and only trusts certificates that are shared by verifying identity prior to granting access to those certificates. &lt;/p&gt;
+&lt;p&gt;To securely load certificates from &lt;a href="https://docs.microsoft.com/en-us/azure/key-vault/"&gt;Azure Key Vault&lt;/a&gt;, Spring Boot apps use &lt;a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview"&gt;managed identities&lt;/a&gt; and &lt;a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/"&gt;Azure role-based access control&lt;/a&gt;, and Azure Spring Cloud uses a provider service principal and Azure role-based access control. This secure loading is powered using the Azure Key Vault &lt;a href="https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/keyvault/azure-security-keyvault-jca"&gt;JCA&lt;/a&gt; (Java Cryptography Architecture) Provider.&lt;/p&gt;
+&lt;p&gt;With Azure Key Vault:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You control the storage and distribution of certificates to reduce accidental leakage.&lt;/li&gt;
+  &lt;li&gt;Applications and services can securely access certificates. Key Vault uses Azure role-based access control to lock down access to only those requiring access, such as an admin of course, but also for apps using the principle of least privilege. Applications and service authenticate and authorize, using Azure Active Directory and Azure role-based access control, to access certificates.&lt;/li&gt;
+  &lt;li&gt;You can monitor the access and use of certificates in Key Vault through its full audit trail.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#secure-communications-end-to-end-or-terminate-tls-at-any-point" class="anchor" name="secure-communications-end-to-end-or-terminate-tls-at-any-point"&gt;&lt;/a&gt;Secure communications end-to-end or terminate TLS at any point&lt;/h2&gt;
+&lt;p&gt;As illustrated in the diagram below, there are several segments of communications through:&lt;br/&gt;* Network access points such as Azure Front Door, Azure App Gateway, F5 BIG-IP Local Traffic Manager, Azure API Management and Apigee API Management&lt;br/&gt;* Spring Boot apps and&lt;br/&gt;* Backend systems such as databases, messaging and eventing systems and app cache.&lt;/p&gt;
+&lt;p&gt;You can secure communications end-to-end or terminate transport level security at any communication point for Spring Boot apps.&lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/secure-e2e/secure-communications-end-to-end-for-spring-boot-apps.jpg" /&gt;&lt;h3&gt;&lt;a href="#securing-communications-into-azure-spring-cloud" class="anchor" name="securing-communications-into-azure-spring-cloud"&gt;&lt;/a&gt;Securing communications into Azure Spring Cloud&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Segment 1&lt;/strong&gt; represents securing communications from consumers - like browsers, mobile phones, desktops, kiosks, or network access points like Azure Front Door, Azure App Gateway, F5 BIG-IP Local Traffic Manager, Azure API Management and Apigee API Management - to the ingress controller in Azure Spring Cloud. &lt;/p&gt;
+&lt;p&gt;By default, segment 1 is secured using a Microsoft supplied SSL certificate for the *.azuremicroservices.io domain. You can apply your own SSL certificate in Azure Key Vault by binding a custom domain to your app in Azure Spring Cloud. No code is necessary.&lt;/p&gt;&lt;h3&gt;&lt;a href="#securing-communications-from-ingress-controller-to-apps" class="anchor" name="securing-communications-from-ingress-controller-to-apps"&gt;&lt;/a&gt;Securing communications from ingress controller to apps&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Segment 2&lt;/strong&gt; represents securing communications from Azure Spring Cloud¡¯s ingress controller to any app on Azure Spring Cloud. You can enable &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-enable-end-to-end-tls"&gt;TLS/SSL to secure traffic from the ingress controller to an app&lt;/a&gt; that supports HTTPS. &lt;/p&gt;
+&lt;p&gt;A Spring Boot app can use Spring¡¯s approach to enable HTTPS or secure communications by using the &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault-certificates#enable-the-spring-boot-app-to-load-the-tlsssl-certificate"&gt;Azure Key Vault Certificates Spring Boot Starter&lt;/a&gt; ? in three configuration steps to secure communications using an SSL certificate from an Azure Key Vault. No code is necessary.&lt;/p&gt;
+&lt;p&gt;Step 1 ? Include the Azure Key Vault Certificates Spring Boot Starter:&lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/secure-e2e/azure-spring-boot-starter-keyvault-certificates-dependency.jpg" /&gt;
+&lt;p&gt;Step 2 ? Configure an app to load an SSL certificate from Azure Key Vault by specifying the URI of the Azure Key Vault and the certificate name:&lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/secure-e2e/configure-spring-boot-app-to-load-SSL-certificate.jpg" /&gt;
+&lt;p&gt;Step 3 ? Enable the app¡¯s &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-enable-system-assigned-managed-identity"&gt;managed identity&lt;/a&gt; and grant the managed identity with &amp;ldquo;Get&amp;rdquo; and &amp;ldquo;List&amp;rdquo; access to the Azure Key Vault&lt;/p&gt;&lt;h3&gt;&lt;a href="#securing-communications-from-app-to-managed-middleware" class="anchor" name="securing-communications-from-app-to-managed-middleware"&gt;&lt;/a&gt;Securing communications from app to managed middleware&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Segment 3&lt;/strong&gt; represents communications from any app to the managed Spring Cloud Config Server and Spring Cloud Service Registry in Azure Spring Cloud. By default, segment 3 is secured using a Microsoft supplied SSL certificate.&lt;/p&gt;&lt;h3&gt;&lt;a href="#securing-app-to-app-communications" class="anchor" name="securing-app-to-app-communications"&gt;&lt;/a&gt;Securing app to app communications&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Segment 4&lt;/strong&gt; represents communications between an app to another app in Azure Spring Cloud. &lt;/p&gt;
+&lt;p&gt;You can configure the caller app using the Azure Key Vault Certificates Spring Boot Starter to trust the SSL certificate supplied by an HTTPS-enabled called app. &lt;/p&gt;
+&lt;p&gt;The receiver Spring Boot app can use Spring¡¯s approach to enable HTTPS or secure communications by using the Azure Key Vault Certificates Spring Boot Starter.&lt;/p&gt;&lt;h3&gt;&lt;a href="#securing-app-to-external-system-communications" class="anchor" name="securing-app-to-external-system-communications"&gt;&lt;/a&gt;Securing app to external system communications&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Segment 5&lt;/strong&gt; represents communications between an app running in Azure Spring Cloud and external systems. You can configure the app running in Azure Spring Cloud to trust the SSL certificate supplied by any external systems - using the &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault-certificates#run-a-spring-boot-application-with-secure-outbound-connections"&gt;Azure Key Vault Certificates Spring Boot Starter&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#implicitly-load-ssl-certificates-from-key-vault-into-an-app" class="anchor" name="implicitly-load-ssl-certificates-from-key-vault-into-an-app"&gt;&lt;/a&gt;Implicitly load SSL certificates from Key Vault into an app&lt;/h3&gt;
+&lt;p&gt;If your Spring code, Java code, or open-source libraries, such as openssl, rely on the JVM default JCA chain to implicitly load certificates into the JVM¡¯s trust store, then you &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-use-tls-certificate#import-a-certificate"&gt;can import your SSL certificates from Key Vault&lt;/a&gt; into Azure Spring Cloud and use those certificates within the app.&lt;/p&gt;&lt;h3&gt;&lt;a href="#upload-well-known-public-ssl-certificates-for-backend-systems" class="anchor" name="upload-well-known-public-ssl-certificates-for-backend-systems"&gt;&lt;/a&gt;Upload well known public SSL certificates for backend systems&lt;/h3&gt;
+&lt;p&gt;For an app to communicate to backend services in the cloud or in on premises systems, it may require the use of public SSL certificates to secure communication. You can upload &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-use-tls-certificate"&gt;those SSL certificates&lt;/a&gt; for securing outbound communications.&lt;/p&gt;&lt;h2&gt;&lt;a href="#automate-provisioning-and-configuration-for-securing-communications" class="anchor" name="automate-provisioning-and-configuration-for-securing-communications"&gt;&lt;/a&gt;Automate provisioning and configuration for securing communications&lt;/h2&gt;
+&lt;p&gt;Using an ARM Template, Bicep, or Terraform, you can automate the provisioning and configuration of all the Azure resources mentioned above for securing communications.&lt;/p&gt;&lt;h2&gt;&lt;a href="#build-your-solutions-and-secure-communications-today" class="anchor" name="build-your-solutions-and-secure-communications-today"&gt;&lt;/a&gt;Build your solutions and secure communications today!&lt;/h2&gt;
+&lt;p&gt;Azure Spring Cloud is a fully managed service for Spring Boot applications. It abstracts away the complexity of infrastructure and Spring Cloud middleware management from users. So, you can focus on building your business logic and let Azure take care of dynamic scaling, patches, security, compliance, and high availability. With a few steps, you can provision Azure Spring Cloud, create applications, deploy, and scale Spring Boot applications, and start securing communications in minutes.&lt;/p&gt;
+&lt;p&gt;Azure Spring Cloud is jointly built, operated, and supported by Microsoft and VMware.&lt;br/&gt;We will continue to bring more developer-friendly and enterprise-ready features to Azure Spring Cloud. We would love to hear how you are building impactful solutions using Azure Spring Cloud&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Deploy Spring Boot apps to Azure Spring Cloud and secure communications end-to-end!&lt;/p&gt;
+&lt;p&gt;Get started today&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Learn using an &lt;a href="https://docs.microsoft.com/en-us/learn/modules/azure-spring-cloud-workshop/"&gt;MS Learn module&lt;/a&gt; or &lt;a href="https://github.com/microsoft/azure-spring-cloud-training"&gt;self-paced workshop&lt;/a&gt; on GitHub&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/Azure-Samples/spring-petclinic-microservices"&gt;Deploy&lt;/a&gt; a distributed version of Spring Petclinic application&lt;/li&gt;
+  &lt;li&gt;Learn &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/"&gt;more&lt;/a&gt; about implementing solutions on Azure Spring Cloud&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Secure communications end-to-end for Spring Boot apps&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/tutorial-custom-domain?tabs=Azure-portal"&gt;Bind custom domain to an app in Azure Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-enable-end-to-end-tls"&gt;Secure traffic from ingress controller to an app in Azure Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault-certificates#enable-the-spring-boot-app-to-load-the-tlsssl-certificate"&gt;Azure Key Vault Certificates Spring Boot Starter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/spring/azure-spring-boot-starter-keyvault-certificates"&gt;Azure Key Vault Certificates Spring Boot Starter (GitHub.com)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Azure Key Vault &lt;a href="https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/keyvault/azure-security-keyvault-jca"&gt;JCA&lt;/a&gt; (Java Cryptography Architecture) Provider&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additional Resources&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Deploy Spring Boot applications by leveraging enterprise best practices ? &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/reference-architecture"&gt;Azure Spring Cloud Reference Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Migrate your &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-spring-cloud"&gt;Spring Boot&lt;/a&gt;, &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-cloud"&gt;Spring Cloud&lt;/a&gt;, and &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-tomcat-to-azure-spring-cloud"&gt;Tomcat&lt;/a&gt; applications to Azure Spring Cloud&lt;/li&gt;
+  &lt;li&gt;Wire Spring applications to interact with Azure services&lt;/li&gt;
+  &lt;li&gt;For feedback and questions, &lt;a href="mailto:AzureSpringCloud-Talk@service.microsoft.com"&gt;please e-mail us&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Gateway and gRPC</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/08/spring-cloud-gateway-and-grpc" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Alberto C. R?os</name>
+    </author>
+    <id>tag:spring.io,2021-12-06:4632</id>
+    <updated>2021-12-08T17:00:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Starting from version 3.1.0 as part of the Spring Cloud 2021.0.0 (aka Jubilee) release train, Spring Cloud Gateway included support for gRPC and HTTP/2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We will introduce the basic concepts behind gRPC and how to configure it with two examples:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;One that showcases how Spring Cloud Gateway can transparently re-route gRPC traffic without needing to know the proto definition and without having to modify our existing gRPC servers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Another that showcases how we can create a custom filter in Spring Cloud Gateway to transform a JSON payload to a gRPC message.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="introduction-to-grpc-and-http2"&gt;&lt;a class="anchor" href="#introduction-to-grpc-and-http2"&gt;&lt;/a&gt;Introduction to gRPC and HTTP/2&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;HTTP/2 makes our applications faster, simpler, and more robust. Reducing latency by enabling request and response
+multiplexing, adding efficient compression of HTTP header fields, and adding support for request prioritization and
+server push.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The reduction in the number of connections is particularly important when improving the performance of HTTPS: that way
+we have less expensive TLS handshakes, more efficient session reuse, reducing client and server resources.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;HTTP/2 provides two mechanisms for negotiating the application level protocol:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;H2C&lt;/code&gt; HTTP/2.0 support with clear-text&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;H2&lt;/code&gt; HTTP/2.0 support with TLS&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Even though &lt;code&gt;reactor-netty&lt;/code&gt; has support for &lt;code&gt;H2C&lt;/code&gt; clear-text protocol, Spring Cloud Gateway requires &lt;code&gt;H2&lt;/code&gt; with TLS to
+assure transport security.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;HTTP/2 adds a binary framing layer, which is how the HTTP messages are encapsulated and transferred between the client
+and server, enabling more efficient ways to transfer data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/reactor/reactor-netty"&gt;reactor-netty&lt;/a&gt; and its HTTP/2 support, we were able to extend
+Spring Cloud Gateway to support gRPC.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://grpc.io/"&gt;gRPC&lt;/a&gt; is a high-performance Remote Procedure Call framework that can run in any environment. It
+provides bi-directional streaming, and it&amp;#8217;s based on HTTP/2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;gRPC services can be defined using Protocol Buffers, a powerful binary serialization toolset and language, and
+provides tools for generating clients and servers across different languages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="getting-started"&gt;&lt;a class="anchor" href="#getting-started"&gt;&lt;/a&gt;Getting started&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In order to enable gRPC in Spring Cloud Gateway, we need to enable HTTP/2 and SSL in our project &lt;a href="https://docs.oracle.com/cd/E19830-01/819-4712/ablqw/index.html"&gt;by adding a keystore&lt;/a&gt;, this can be done
+through configuration by adding the following:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="yaml"&gt;server:
+  http2:
+    enabled: true
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:keystore.p12
+    key-store-password: password
+    key-password: password
+    enabled: true&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Now that we have it enabled, we can create a route that redirects traffic to a gRPC server and take advantage of the
+existing filters and predicates, for example, this route will redirect traffic that comes from any path starting
+with &lt;code&gt;grpc&lt;/code&gt; to a local server in the port &lt;code&gt;6565&lt;/code&gt; and add header &lt;code&gt;X-Request-header&lt;/code&gt; with the value &lt;code&gt;header-value&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="yaml"&gt;spring:
+  cloud:
+    gateway:
+      routes:
+        - id: grpc
+          uri: https://localhost:6565
+          predicates:
+            - Path=/grpc/**
+          filters:
+            - AddResponseHeader=X-Request-header, header-value&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="running-grpc-to-grpc"&gt;&lt;a class="anchor" href="#running-grpc-to-grpc"&gt;&lt;/a&gt;Running gRPC to gRPC&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;An end to end example can be found in this repository with the following parts:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://raw.githubusercontent.com/Albertoimpl/spring-cloud-gateway-grpc/main/grpc-simple-gateway.png" alt="grpc-simple-gateway"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;code&gt;grpc-server&lt;/code&gt; that exposes a &lt;code&gt;HelloService&lt;/code&gt;, and gRPC endpoint to receive a &lt;code&gt;HelloRequest&lt;/code&gt; and return
+a &lt;code&gt;HelloResponse&lt;/code&gt;:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;syntax = "proto3";
+
+message HelloRequest {
+  string firstName = 1;
+  string lastName = 2;
+}
+
+message HelloResponse {
+  string greeting = 1;
+}
+
+service HelloService {
+  rpc hello(HelloRequest) returns (HelloResponse);
+}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The server will concatenate a salutation with &lt;code&gt;firstName&lt;/code&gt; and a &lt;code&gt;lastName&lt;/code&gt; and respond with a &lt;code&gt;greeting&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For example, this input:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="text"&gt;firstName: Saul
+lastName: Hudson&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Will output:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="text"&gt;greeting: Hello, Saul Hudson&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;code&gt;grpc-client&lt;/code&gt;, in charge of sending the &lt;code&gt;HelloRequest&lt;/code&gt; to the &lt;code&gt;HelloService&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;grpc-simple-gateway&lt;/code&gt; that routes the requests and adds a header with the configuration mentioned above. Note that this gateway application does not have any dependency to gRPC nor to the proto definition used by client and server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;At the moment there is just one route that will forward everything to the &lt;code&gt;grpc-server&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="yaml"&gt;      routes:
+        - id: grpc
+          uri: https://localhost:6565
+          predicates:
+            - Path=/**
+          filters:
+            - AddResponseHeader=X-Request-header, header-value&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To start the server that is going to be listening to requests:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="shell"&gt; ./gradlew :grpc-server:bootRun&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Then, we start the gateway that is going to re-route the gRPC requests:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="shell"&gt;./gradlew :grpc-simple-gateway:bootRun&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Finally, we can use the client that points to the gateway application:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="shell"&gt;./gradlew :grpc-client:bootRun&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The gateway routes and filters can be modified in &lt;a href="https://github.com/Albertoimpl/spring-cloud-gateway-grpc/blob/5bf80a24a8adf0d5d7c1614524f9d55707536c19/grpc-simple-gateway/src/main/resources/application.yaml#L14"&gt;grpc-simple-gateway/src/main/resources/application.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="running-json-to-grpc-with-a-custom-filter"&gt;&lt;a class="anchor" href="#running-json-to-grpc-with-a-custom-filter"&gt;&lt;/a&gt;Running JSON to gRPC with a custom filter&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Thanks to Spring Cloud Gateway flexibility, it is possible to create a custom filter to transform from a JSON payload to
+a gRPC message.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Even though it will have a performance impact since we have to serialize and deserialize the requests in the gateway and creating a channel from it,
+it is a common pattern if you want to expose a JSON API while maintaining internal compatibility.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For that, we can extend our &lt;code&gt;grpc-json-gateway&lt;/code&gt; to include the &lt;code&gt;proto&lt;/code&gt; definition with the message we want to send.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="https://raw.githubusercontent.com/Albertoimpl/spring-cloud-gateway-grpc/main/grpc-json-gateway.png" alt="grpc-json-gateway"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Cloud Gateway contains a mechanism to create custom filters allowing us to intercept requests and add custom logic to them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For this particular scenario, we are going to deserialize the JSON request and create a gRPC channel that will send a message to the &lt;code&gt;grpc-server&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;static class GRPCResponseDecorator extends ServerHttpResponseDecorator {
+
+  @Override
+  public Mono&amp;lt;Void&amp;gt; writeWith(Publisher&amp;lt;?extends DataBuffer&amp;gt; body) {
+    exchange.getResponse().getHeaders().set("Content-Type", "application/json");
+
+    URI requestURI = exchange.getRequest().getURI();
+    ManagedChannel channel = createSecuredChannel(requestURI.getHost(), 6565);
+
+    return getDelegate().writeWith(deserializeJSONRequest()
+            .map(jsonRequest -&amp;gt; {
+                String firstName = jsonRequest.getFirstName();
+                String lastName = jsonRequest.getLastName();
+                return HelloServiceGrpc.newBlockingStub(channel)
+                        .hello(HelloRequest.newBuilder()
+                                .setFirstName(firstName)
+                                .setLastName(lastName)
+                                .build());
+            })
+            .map(this::serialiseJSONResponse)
+            .map(wrapGRPCResponse())
+            .cast(DataBuffer.class)
+            .last());
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The full implementation can be found
+in: &lt;a href="https://github.com/Albertoimpl/spring-cloud-gateway-grpc/blob/5bf80a24a8adf0d5d7c1614524f9d55707536c19/grpc-json-gateway/src/main/java/com/example/grpcserver/hello/JSONToGRPCFilterFactory.java#L38"&gt;grpc-json-gateway/src/main/java/com/example/grpcserver/hello/JSONToGRPCFilterFactory.java&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Using the same &lt;code&gt;grpc-server&lt;/code&gt;, we can start the gateway with the custom filter with:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="shell"&gt;./gradlew :grpc-json-gateway:bootRun&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;And send JSON requests to the &lt;code&gt;grpc-json-gateway&lt;/code&gt; using, for example, &lt;code&gt;curl&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="bash"&gt;curl -XPOST 'https://localhost:8091/json/hello' -d '{"firstName":"Duff","lastName":"McKagan"}' -k -H"Content-Type: application/json" -v&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We see how the gateway application forwards the requests and returns the JSON payload with the new &lt;code&gt;Content-Type&lt;/code&gt; header:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="bash"&gt;&amp;lt; HTTP/2 200
+&amp;lt; content-type: application/json
+&amp;lt; content-length: 34
+&amp;lt;
+* Connection #0 to host localhost left intact
+{"greeting":"Hello, Duff McKagan"}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="next-steps"&gt;&lt;a class="anchor" href="#next-steps"&gt;&lt;/a&gt;Next Steps&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this post, we&amp;#8217;ve looked at a few examples of how gRPC can be integrated within Spring Cloud Gateway. I¡¯d love to know
+what other usages you&amp;#8217;ve found to be helpful in your experiences.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 7th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/07/this-week-in-spring-december-7th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-07:4634</id>
+    <updated>2021-12-07T19:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! We&amp;rsquo;ve got a ton of stuff to dive into so let&amp;rsquo;s get goin&amp;rsquo;! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/02/a-bootiful-podcast-datastax-s-christopher-bradford-on-the-apache-cassandra-operator-for-kubernetes-k8ssandra"&gt;A Bootiful Podcast: DataStax&amp;rsquo;s Christopher Bradford on the Apache Cassandra operator for Kubernetes, K8ssandra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/01/accelerate-spring-apps-to-cloud-at-scale-discussion-with-azure-spring-cloud-customers"&gt;Accelerate Spring Apps to Cloud at Scale - Discussion with Azure Spring Cloud Customers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/01/spring-authorization-server-0-2-1-available-now"&gt;Spring Authorization Server 0.2.1 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/02/spring-cloud-2021-0-0-codename-jubilee-has-been-released"&gt;Spring Cloud 2021.0.0 (codename Jubilee) Has Been Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/02/spring-cloud-function-3-2-is-out"&gt;Spring Cloud Function 3.2 is out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/07/spring-cloud-sleuth-3-1-0-is-out"&gt;Spring Cloud Sleuth 3.1.0 is out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/12/01/spring-tips-controllers-and-rsocket"&gt;Spring Tips: @Controllers and RSocket&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://toedter.github.io/spring-hateoas-jsonapi/1.2.0/reference/#affordances"&gt;JSON:API for Spring HATEOAS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://thenewstack.io/living-with-kubernetes-12-commands-to-debug-your-workloads/"&gt;Living with Kubernetes: 12 Commands to Debug Your Workloads&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hmm. I wonder what &lt;a href="https://twitter.com/mp911de/status/1467775790121205761?s=12"&gt;Mark Paluch&amp;rsquo;s cooking something awesome with the R2DBC SPI&lt;/a&gt;. I wonder what&amp;hellip;?&lt;/li&gt;
+  &lt;li&gt;Nice job, Github Actions! There&amp;rsquo;s now integrated &lt;code&gt;sigstore&lt;/code&gt; support! &lt;a href="https://github.blog/2021-12-06-safeguard-container-signing-capability-actions/"&gt;Safeguard your containers with new container signing capability in GitHub Actions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pull Request #762 &lt;a href="https://github.com/cncf/toc/pull/762"&gt;adds Knative for incubation at CNCF&lt;/a&gt; - hurray!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Sleuth 3.1.0 is out!</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/07/spring-cloud-sleuth-3-1-0-is-out" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Marcin Grzejszczak</name>
+    </author>
+    <id>tag:spring.io,2021-12-07:4633</id>
+    <updated>2021-12-07T17:08:00Z</updated>
+    <content type="html">&lt;p&gt;With the release of the Spring Cloud 2021.0.0 (aka Jubilee) release train we&amp;rsquo;re more than happy to announce the general availability of Spring Cloud Sleuth 3.1.0. In this blog post we&amp;rsquo;ll describe the most notable released features.&lt;/p&gt;
+&lt;p&gt;Here is the list of most notable features, we&amp;rsquo;ll elaborate on them in the subsequent parts of this post.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;JDBC &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1930"&gt;#1930&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tomcat Valve &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1329"&gt;#1329&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Vault &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1952"&gt;#1952&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Automatic tag table generation for documentation &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1950"&gt;#1950&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Deployer &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1947"&gt;#1947&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;R2DBC &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1524"&gt;#1524&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Kafka &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/2013"&gt;#2013&lt;/a&gt; and Reactor Kafka &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1708"&gt;#1708&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring TX &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1941"&gt;#1941&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Batch &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1904"&gt;#1904&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;RSocket &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1677"&gt;#1677&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Task &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1903"&gt;#1903&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Config &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1915"&gt;#1915&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud CircuitBreaker Reactive &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1910"&gt;#1910&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Cassandra &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1974"&gt;#1974&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Session &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1961"&gt;#1961&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Security &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/2011"&gt;#2011&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Prometheus Exemplars &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/2039"&gt;#2039&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Stream Reactive &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/2038"&gt;#2038&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Reactive Mongo &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/2044"&gt;#2044&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Abstracted Redis instrumentation &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/2046"&gt;#2046&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Custom Actuator for storing traces &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/1879"&gt;#1879&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#jdbc" class="anchor" name="jdbc"&gt;&lt;/a&gt;JDBC&lt;/h2&gt;
+&lt;p&gt;We¡¯re decorating &lt;code&gt;DataSource&lt;/code&gt;s in a trace representation. We delegate actual proxying to either &lt;a href="https://github.com/p6spy/p6spy"&gt;p6spy&lt;/a&gt; or &lt;a href="https://github.com/ttddyy/datasource-proxy"&gt;datasource-proxy&lt;/a&gt;. In order to use this feature you need to have them on the classpath.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/jdbc.jpeg?raw=true" alt="JDBC example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-jdbc-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/data"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#tomcat-valve" class="anchor" name="tomcat-valve"&gt;&lt;/a&gt;Tomcat Valve&lt;/h2&gt;
+&lt;p&gt;The main driver behind this change is that up till Sleuth 3.1 your Tomcat logs wouldn&amp;rsquo;t have any tracing information in it. With this change we&amp;rsquo;re instrumenting Tomcat, so we&amp;rsquo;re far earlier in the lifecycle of the request and we can instrument all possible logs with tracing information.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/mvc.jpeg?raw=true" alt="MVC example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-tomcat-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/mvc"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-vault" class="anchor" name="spring-vault"&gt;&lt;/a&gt;Spring Vault&lt;/h2&gt;
+&lt;p&gt;We¡¯re instrumenting the &lt;code&gt;RestTemplate&lt;/code&gt; or &lt;code&gt;WebClient&lt;/code&gt; instances used by Spring Vault to communicate with Vault.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/vault.jpeg?raw=true" alt="Vault example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-vault-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/vault-resttemplate"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for &lt;code&gt;RestTemplate&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/vault-webclient"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for &lt;code&gt;WebClient&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#automatic-tag-table-generation-for-documentation" class="anchor" name="automatic-tag-table-generation-for-documentation"&gt;&lt;/a&gt;Automatic tag table generation for documentation&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s nothing more frustrating in the tracing world than creating a span and not starting it, or not stopping it. We had enough of such situations&amp;hellip; Another challenge we faced was that we didn&amp;rsquo;t even remember any longer how many spans we create, what their names are and how many tags / events are being set on them.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve decided to alter the way we code things in Sleuth so that we can introduce certain automation. We are instrumenting the code once, however we are able to turn on at the test time additional assertions that verify if spans were started and stopped etc. Also at the documentation build time we parse the sources and build a table of spans together with some details.&lt;/p&gt;
+&lt;p&gt;You can check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/appendix.html#sleuth-spans"&gt;docs&lt;/a&gt; to see the results of that automation.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-cloud-deployer" class="anchor" name="spring-cloud-deployer"&gt;&lt;/a&gt;Spring Cloud Deployer&lt;/h2&gt;
+&lt;p&gt;If you have &lt;a href="https://github.com/spring-cloud/spring-cloud-deployer"&gt;Spring Cloud Deployer&lt;/a&gt; running on the classpath, we wrap the &lt;code&gt;AppDeployer&lt;/code&gt; in a trace representation. We are polling the application for its status at a default interval.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/deployer.jpeg?raw=true" alt="Deployer example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-deployer-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/deployer"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#r2dbc" class="anchor" name="r2dbc"&gt;&lt;/a&gt;R2DBC&lt;/h2&gt;
+&lt;p&gt;If you have &lt;a href="http://r2dbc.io/r2dbc-proxy/docs/current-snapshot/docs/html/"&gt;R2DBC Proxy&lt;/a&gt; on the classpath we will instrument the &lt;code&gt;ConnectionFactory&lt;/code&gt; so that it contains a custom &lt;code&gt;ProxyExecutionListener&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/r2dbc.jpeg?raw=true" alt="R2DBC example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-r2dbc-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/data-reactive"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#kafka-and-reactor-kafka" class="anchor" name="kafka-and-reactor-kafka"&gt;&lt;/a&gt;Kafka and Reactor Kafka&lt;/h2&gt;
+&lt;p&gt;We decorate the Kafka clients (&lt;code&gt;KafkaProducer&lt;/code&gt; and &lt;code&gt;KafkaConsumer&lt;/code&gt;) to create a span for each event that is produced or consumed. We also provide &lt;code&gt;TracingKafkaProducerFactory&lt;/code&gt; and &lt;code&gt;TracingKafkaConsumerFactory&lt;/code&gt; to be used with the Reactor Kafka clients (&lt;code&gt;KafkaSender&lt;/code&gt; and &lt;code&gt;KafkaReceiver&lt;/code&gt;, respectively). Additionally, we decorate any Spring Kafka &lt;code&gt;ProducerFactory&lt;/code&gt; and &lt;code&gt;ConsumerFactory&lt;/code&gt; available in the context.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/reactive-kafka.jpeg?raw=true" alt="Kafka example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-kafka-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/kafka-producer"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for Kafka producer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/kafka-consumer"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for Kafka consumer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/kafka-reactive-producer"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for Kafka Reactive producer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/kafka-reactive-consumer"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for Kafka Reactive consumer.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-tx" class="anchor" name="spring-tx"&gt;&lt;/a&gt;Spring TX&lt;/h2&gt;
+&lt;p&gt;If you have Spring Tx on the classpath we will instrument the &lt;code&gt;PlatformTransactionManager&lt;/code&gt; and the &lt;code&gt;ReactiveTransactionManager&lt;/code&gt; to create a span whenever a new transaction is created.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/jdbc.jpeg?raw=true" alt="TX example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-tx-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/data"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-batch" class="anchor" name="spring-batch"&gt;&lt;/a&gt;Spring Batch&lt;/h2&gt;
+&lt;p&gt;If you have Spring Batch running on the classpath, we wrap the &lt;code&gt;StepBuilderFactory&lt;/code&gt; and the &lt;code&gt;JobBuilderFactory&lt;/code&gt; to propagate the tracing context.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/batch.jpeg?raw=true" alt="Batch example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-batch-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/batch"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#rsocket" class="anchor" name="rsocket"&gt;&lt;/a&gt;RSocket&lt;/h2&gt;
+&lt;p&gt;If you have Spring RSocket running on the classpath, we wrap the inbound and outbound communication to propagate the tracing context via the metadata&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/rsocket.jpeg?raw=true" alt="RSocket example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-rsocket-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/rsocket-server"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for RSocket server.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/rsocket-client"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for RSocket client.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-cloud-task" class="anchor" name="spring-cloud-task"&gt;&lt;/a&gt;Spring Cloud Task&lt;/h2&gt;
+&lt;p&gt;If you have Spring Cloud Task running on the classpath, we&amp;rsquo;re instrumenting &lt;code&gt;TaskExecutionListener&lt;/code&gt; and &lt;code&gt;CommandLineRunner&lt;/code&gt; and &lt;code&gt;ApplicationRunner&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/task.jpeg?raw=true" alt="Task example" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/task"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-cloud-config" class="anchor" name="spring-cloud-config"&gt;&lt;/a&gt;Spring Cloud Config&lt;/h2&gt;
+&lt;p&gt;If you have Spring Cloud Config Server running on the classpath, we will wrap the &lt;code&gt;EnvironmentRepository&lt;/code&gt; in a span.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/config-server.jpeg?raw=true" alt="Config Server example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-config-server-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/config-server"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-cloud-circuitbreaker-reactive" class="anchor" name="spring-cloud-circuitbreaker-reactive"&gt;&lt;/a&gt;Spring Cloud CircuitBreaker Reactive&lt;/h2&gt;
+&lt;p&gt;If you have Spring Cloud CircuitBreaker on the classpath, we will wrap the passed command &lt;code&gt;Supplier&lt;/code&gt; and the fallback &lt;code&gt;Function&lt;/code&gt; in its trace representations.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/reactive-circuitbreaker.jpeg?raw=true" alt="CircuitBreaker Reactive example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-circuitbreaker-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/circuitbreaker-reactive"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#cassandra" class="anchor" name="cassandra"&gt;&lt;/a&gt;Cassandra&lt;/h2&gt;
+&lt;p&gt;If you have Spring Data Cassandra on the classpath, we¡¯re instrumenting Casandra¡¯s &lt;code&gt;CqlSession&lt;/code&gt; and &lt;code&gt;ReactiveSession&lt;/code&gt; interfaces and we¡¯re providing our own implementation of the &lt;code&gt;RequestTracker&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/cassandra.jpeg?raw=true" alt="Cassandra example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-cassandra-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/cassandra"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for non reactive Cassandra.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/cassandra-reactive"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for reactive Cassandra.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-session" class="anchor" name="spring-session"&gt;&lt;/a&gt;Spring Session&lt;/h2&gt;
+&lt;p&gt;If you have Spring Session on the classpath, we¡¯re instrumenting the &lt;code&gt;Session&lt;/code&gt; repositories that wraps all operations in a span.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/session.jpeg?raw=true" alt="Session example" /&gt;&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/integrations.html#sleuth-session-integration"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/session"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-security" class="anchor" name="spring-security"&gt;&lt;/a&gt;Spring Security&lt;/h2&gt;
+&lt;p&gt;If you have Spring Security on the classpath, we create an implementation of &lt;code&gt;SecurityContextChangedListener&lt;/code&gt; that annotates a current span with an event when context has changed.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/security.jpeg?raw=true" alt="Security example" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/security"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#prometheus-exemplars" class="anchor" name="prometheus-exemplars"&gt;&lt;/a&gt;Prometheus Exemplars&lt;/h2&gt;
+&lt;p&gt;Exemplars are metadata attached to metrics (see: &lt;a href="https://github.com/prometheus/client_java#exemplars"&gt;Prometheus Exemplars&lt;/a&gt;), e.g.: traceId so that you can get an example traceId for your metrics.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re integrating Sleuth with Prometheus so that if somebody uses the Prometheus Java Client, they can get Exemplars using Sleuth. This issue is also connected to the Micrometer Exemplars Support, &lt;a href="https://github.com/micrometer-metrics/micrometer/issues/2672"&gt;see&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/issues/2039"&gt;Here&lt;/a&gt; you can read more about the issue.&lt;/p&gt;
+&lt;p&gt;There are a couple of notes to take into consideration with regards to this feature:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Micrometer does not support exemplars at the moment, we are planning to do it in our next release (you can use the Prometheus client in the meantime)&lt;/li&gt;
+  &lt;li&gt;This is an experimental feature in Prometheus, you need to explicitly enable it with a &lt;a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#exemplars-storage"&gt;feature flag&lt;/a&gt; (see: &lt;a href="https://github.com/jonatan-ivanov/local-services/commit/f3e37cbdf9943ac9b722605d559bbf1bcff8f637"&gt;example&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Likewise, you need to &lt;a href="https://grafana.com/docs/grafana/latest/datasources/prometheus/#configuring-exemplars"&gt;configure&lt;/a&gt; it in your Grafana datasource and define the url pattern for your tracing backend (see: &lt;a href="https://github.com/jonatan-ivanov/local-services/commit/d2b5a3823cf5b5fb88e2445c98cd2677aa4e5925"&gt;example with Zipkin&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;You also need to make sure that the exemplar flag is enabled on the panel of your dashboard where you want to use exemplars (see: &lt;a href="https://github.com/jonatan-ivanov/local-services/commit/a0bead7ce1f7667df56ee2244cdec0278bbcdf1e#diff-96ea0550ca66bf8428836c6eb864c3d0e3bcf0e07f2a1be13308146837365887R91"&gt;example Dashboard&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;There is no configuration needed on your tracing backend (e.g.: Zipkin), you just need to know the url pattern that the backend uses to reference a traceId (see the url pattern above)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/exemplars1.png?raw=true" alt="Exemplars example" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/exemplars2.png?raw=true" alt="Exemplars example" /&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-cloud-stream-reactive" class="anchor" name="spring-cloud-stream-reactive"&gt;&lt;/a&gt;Spring Cloud Stream Reactive&lt;/h2&gt;
+&lt;p&gt;Spring Cloud Sleuth can instrument Spring Cloud Function. Since Spring Cloud Stream uses Spring Cloud Function you will get the messaging instrumentation out of the box.&lt;/p&gt;
+&lt;p&gt;The way to achieve it is to provide a &lt;code&gt;Function&lt;/code&gt; or &lt;code&gt;Consumer&lt;/code&gt; or &lt;code&gt;Supplier&lt;/code&gt; that takes in a &lt;code&gt;Message&lt;/code&gt; as a parameter e.g. &lt;code&gt;Function&amp;lt;Message&amp;lt;String&amp;gt;, Message&amp;lt;Integer&amp;gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If the type &lt;strong&gt;is not&lt;/strong&gt; &lt;code&gt;Message&lt;/code&gt; then instrumentation &lt;strong&gt;will not&lt;/strong&gt; take place.&lt;/p&gt;
+&lt;p&gt;For a reactive &lt;code&gt;Consumer&amp;lt;Flux&amp;lt;Message&amp;lt;?&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; remember to manually close the span and clear the context before you call &lt;code&gt;.subscribe()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/reactive-stream.jpeg?raw=true" alt="Stream reactive example" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/stream-reactive-producer"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for the producer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/stream-reactive-consumer"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration for the consumer.&lt;/p&gt;&lt;h2&gt;&lt;a href="#reactive-mongo" class="anchor" name="reactive-mongo"&gt;&lt;/a&gt;Reactive Mongo&lt;/h2&gt;
+&lt;p&gt;We¡¯re adding command listeners that wrap all commands in a span. It works both for the Reactive and non Reactive case.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/marcingrzejszczak/sleuth-3_1_0-blog/blob/main/images/reactive-mongo.jpeg?raw=true" alt="Reactive Mongo example" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/tree/main/mongodb-reactive"&gt;Here&lt;/a&gt; you can find a sample that depicts this integration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#abstracted-redis-instrumentation" class="anchor" name="abstracted-redis-instrumentation"&gt;&lt;/a&gt;Abstracted Redis instrumentation&lt;/h2&gt;
+&lt;p&gt;With this &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/pull/2046"&gt;PR&lt;/a&gt; the Redis instrumentation can work for other Tracers, such as OpenTelemetry.&lt;/p&gt;&lt;h2&gt;&lt;a href="#custom-actuator-for-storing-traces" class="anchor" name="custom-actuator-for-storing-traces"&gt;&lt;/a&gt;Custom Actuator for storing traces&lt;/h2&gt;
+&lt;p&gt;Spring Cloud Sleuth comes with a traces Actuator endpoint that can store finished spans. The endpoint can be queried either via an HTTP Get method to simply retrieve the list of stored spans or via HTTP Post method to retrieve the list and clear it.&lt;/p&gt;
+&lt;p&gt;Check the &lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/project-features.html#features-traces-actuator"&gt;docs&lt;/a&gt; for more details.&lt;/p&gt;&lt;h1&gt;&lt;a href="#stay-in-touch" class="anchor" name="stay-in-touch"&gt;&lt;/a&gt;Stay in touch!&lt;/h1&gt;
+&lt;p&gt;This release introduces a lot of instrumentations. We would love to see your traces! You can go to our &lt;a href="https://gitter.im/spring-cloud/spring-cloud-sleuth"&gt;Gitter&lt;/a&gt; and paste a screenshot of your traces so that we can analyze how we can improve it.&lt;/p&gt;
+&lt;p&gt;In case of any questions don&amp;rsquo;t hesitate to ping us&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;On &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/"&gt;Github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;On &lt;a href="https://gitter.im/spring-cloud/spring-cloud-sleuth"&gt;Gitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;On &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-sleuth"&gt;Stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#links" class="anchor" name="links"&gt;&lt;/a&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://docs.wavefront.com/wavefront_springboot.html"&gt;Getting Started with Spring Boot and Tanzu Observability by Wavefront&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.spring.io/spring-cloud-sleuth/docs/3.1.0/reference/html/"&gt;Spring Cloud Sleuth 3.1.0 docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-cloud-samples/spring-cloud-sleuth-samples/"&gt;Spring Cloud Sleuth Samples&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-cloud-sleuth-otel/"&gt;Spring Cloud Sleuth OpenTelemetry project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring-projects-experimental.github.io/spring-cloud-sleuth-otel/docs/current/reference/html/index.html"&gt;Spring Cloud Sleuth OpenTelemetry docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2021.0-Release-Notes#spring-cloud-sleuth"&gt;Spring Cloud Sleuth 3.1.0 release notes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/"&gt;Spring Cloud Sleuth Github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://gitter.im/spring-cloud/spring-cloud-sleuth"&gt;Spring Cloud Sleuth Gitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>A Bootiful Podcast: DataStax's Christopher Bradford on the Apache Cassandra operator for Kubernetes, K8ssandra</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/02/a-bootiful-podcast-datastax-s-christopher-bradford-on-the-apache-cassandra-operator-for-kubernetes-k8ssandra" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-03:4631</id>
+    <updated>2021-12-03T01:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to DataStax&amp;rsquo;s &lt;a href="https://www.linkedin.com/in/bradfordcp/"&gt;Christopher Bradford&lt;/a&gt; on the Apache Cassandra operator for Kubernetes, &lt;a href="https://k8ssandra.io/"&gt;K8ssandra&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://thenewstack.io/taking-your-database-beyond-a-single-kubernetes-cluster/"&gt;KubeCon Talk blogpost part 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://medium.com/building-the-open-data-stack/managing-distributed-applications-in-kubernetes-using-cilium-and-istio-with-helm-and-operator-for-9652d71d6432"&gt;KubeCon Talk blogpost part 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://thenewstack.io/we-pushed-helm-to-the-limit-then-built-a-kubernetes-operator/"&gt;We Pushed Helm to the Limit, then Built a Kubernetes Operator &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://thenewstack.io/a-case-for-databases-on-kubernetes-from-a-former-skeptic/"&gt;A Case for Databases on Kubernetes from a Former Skeptic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe title="DataStax¡®s Christopher Bradford on the Apache Cassandra operator for Kubernetes, K8ssandra " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=yxvy2-1147ea1-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud 2021.0.0 (codename Jubilee) Has Been Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/02/spring-cloud-2021-0-0-codename-jubilee-has-been-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Spencer Gibb</name>
+    </author>
+    <id>tag:spring.io,2021-12-02:4630</id>
+    <updated>2021-12-02T21:45:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce the General Availability of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud 2021.0&lt;/a&gt; Release Train, codename Jubilee, is available today. The release can be found in &lt;a href="https://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-dependencies/2021.0.0/"&gt;Maven Central&lt;/a&gt;. You can check out the 2021.0 &lt;a href="https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2021.0-Release-Notes"&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#notable-changes-in-the-2021-0-release-train" class="anchor" name="notable-changes-in-the-2021-0-release-train"&gt;&lt;/a&gt;Notable Changes in the 2021.0 Release Train&lt;/h2&gt;
+&lt;p&gt;2021.0.0 is compatible with Spring Boot 2.6.1&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/orgs/spring-cloud/projects/59"&gt;the project page&lt;/a&gt; for all the issues and pull requests included in this release.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-commons" class="anchor" name="spring-cloud-commons"&gt;&lt;/a&gt;Spring Cloud Commons&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for per LoadBalancer configuration properties (added as well to Gateway, Contract and OpenFeign).&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-config" class="anchor" name="spring-cloud-config"&gt;&lt;/a&gt;Spring Cloud Config&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Integration with AWS Secrets Manager, AWS Parameter Store and GCP Secret Manager.&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-function" class="anchor" name="spring-cloud-function"&gt;&lt;/a&gt;Spring Cloud Function&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for gRPC, FunctionCatalog via actuator endpoint, AWS improvements, CloudEvents etc. You can read more in &lt;a href="https://spring.io/blog/2021/12/02/spring-cloud-function-3-2-is-out"&gt;this blog post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-gateway" class="anchor" name="spring-cloud-gateway"&gt;&lt;/a&gt;Spring Cloud Gateway&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Redis Route Repository&lt;/li&gt;
+  &lt;li&gt;HTTP 2 Support&lt;/li&gt;
+  &lt;li&gt;gRPC Support&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-kubernetes" class="anchor" name="spring-cloud-kubernetes"&gt;&lt;/a&gt;Spring Cloud Kubernetes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Config Server and Discovery Controllers&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-openfeign" class="anchor" name="spring-cloud-openfeign"&gt;&lt;/a&gt;Spring Cloud OpenFeign&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for &lt;code&gt;@Cachable&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-sleuth" class="anchor" name="spring-cloud-sleuth"&gt;&lt;/a&gt;Spring Cloud Sleuth&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Instrumentation for Tomcat, Spring Vault, R2DBC, JDBC, Spring Cloud Deployer, Spring Cloud Skipper, Reactor Kafka, Spring TX, Spring Batch, RSocket, Spring Cloud Task, Spring Cloud Config, Kotlin Coroutines, and more.&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-stream" class="anchor" name="spring-cloud-stream"&gt;&lt;/a&gt;Spring Cloud Stream&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;About 100 issues have been resolved for this release between &lt;a href="https://github.com/spring-cloud/spring-cloud-stream/milestone/82?closed=1"&gt;core&lt;/a&gt;, &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-binder-kafka/issues?q=is%3Aissue+milestone%3A3.2.0+is%3Aclosed"&gt;Kafka&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-binder-rabbit/milestone/51?closed=1"&gt;Rabbit&lt;/a&gt; binders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following modules were updated as part of 2021.0.0:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Module &lt;/th&gt;
+      &lt;th&gt;Version &lt;/th&gt;
+      &lt;th&gt;Issues&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Vault &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Bus &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Cli &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Zookeeper &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Circuitbreaker &lt;/td&gt;
+      &lt;td&gt;2.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-circuitbreaker/milestone/11?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Commons &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-commons/milestone/96?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Kubernetes &lt;/td&gt;
+      &lt;td&gt;2.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-kubernetes/milestone/38?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud OpenFeign &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign/milestone/47?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Task &lt;/td&gt;
+      &lt;td&gt;2.4.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-task/milestone/53?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Sleuth &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/milestone/97?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Contract &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-contract/milestone/83?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Consul &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Function &lt;/td&gt;
+      &lt;td&gt;3.2.1 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-function/milestone/37?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Stream &lt;/td&gt;
+      &lt;td&gt;3.2.1 &lt;/td&gt;
+      &lt;td&gt;see above for the list of issues&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Gateway &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/milestone/60?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Config &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-config/milestone/96?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Cloudfoundry &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Starter Build &lt;/td&gt;
+      &lt;td&gt;2021.0.0 &lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Netflix &lt;/td&gt;
+      &lt;td&gt;3.1.0 &lt;/td&gt;
+      &lt;td&gt;(&lt;a href="https://github.com/spring-cloud/spring-cloud-netflix/milestone/108?closed=1"&gt;issues&lt;/a&gt;)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As always, we welcome feedback on &lt;a href="https://github.com/spring-cloud/"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href="https://twitter.com/SpringCloud"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&lt;br/&gt;&amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-netflix-eureka-client&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    ...&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;plugins {&#xD;
+  id &amp;#39;org.springframework.boot&amp;#39; version &amp;#39;2.6.1&amp;#39;&#xD;
+  id &amp;#39;io.spring.dependency-management&amp;#39; version &amp;#39;1.0.11.RELEASE&amp;#39;&#xD;
+  id &amp;#39;java&amp;#39;&#xD;
+}&#xD;
+&#xD;
+group = &amp;#39;com.example&amp;#39;&#xD;
+version = &amp;#39;0.0.1-SNAPSHOT&amp;#39;&#xD;
+sourceCompatibility = &amp;#39;11&amp;#39;&#xD;
+&#xD;
+repositories {&#xD;
+  mavenCentral()&#xD;
+}&#xD;
+&#xD;
+ext {&#xD;
+  set(&amp;#39;springCloudVersion&amp;#39;, &amp;quot;2021.0.0&amp;quot;)&#xD;
+}&#xD;
+&#xD;
+dependencies {&#xD;
+  implementation &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
+  implementation &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&amp;#39;&#xD;
+}&#xD;
+&#xD;
+dependencyManagement {&#xD;
+  imports {&#xD;
+    mavenBom &amp;quot;org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}&amp;quot;&#xD;
+  }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Function 3.2 is out!</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/02/spring-cloud-function-3-2-is-out" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Oleg Zhurakousky</name>
+    </author>
+    <id>tag:spring.io,2021-12-02:4629</id>
+    <updated>2021-12-02T18:54:00Z</updated>
+    <content type="html">&lt;p&gt;Spring Cloud &lt;a href="https://spring.io/blog/2021/12/02/spring-cloud-2021-0-0-codename-jubilee-has-been-released"&gt;2021.0.0 is finally out&lt;/a&gt; and with it you have Spring Cloud Function 3.2&lt;/p&gt;
+&lt;p&gt;While the full list of features, enhancements and bug fixes is available &lt;a href="https://github.com/spring-cloud/spring-cloud-function/milestone/37?closed=1"&gt;here&lt;/a&gt;, I¡¯d like to call out few of them in this post and provide some details.&lt;/p&gt;&lt;h2&gt;&lt;a href="#grpc-support" class="anchor" name="grpc-support"&gt;&lt;/a&gt;gRPC Support&lt;/h2&gt;
+&lt;p&gt;In addition to an already existing support for invoking function via &lt;a href="https://docs.spring.io/spring-cloud-function/docs/3.2.1/reference/html/aws.html"&gt;AWS Lambda&lt;/a&gt;, &lt;a href="https://github.com/spring-cloud/spring-cloud-function/tree/main/spring-cloud-function-rsocket"&gt;RSocket&lt;/a&gt;, &lt;a href="https://docs.spring.io/spring-cloud-stream/docs/3.2.1/reference/html/"&gt;Spring Cloud Stream&lt;/a&gt; etc., Spring Cloud Function now allows you to invoke function via &lt;a href="https://grpc.io/"&gt;gRPC&lt;/a&gt;.&lt;br/&gt;Two ways to benefit from it. &lt;/p&gt;&lt;h4&gt;&lt;a href="#em-spring-message-em" class="anchor" name="em-spring-message-em"&gt;&lt;/a&gt;&lt;em&gt;Spring Message&lt;/em&gt;&lt;/h4&gt;
+&lt;p&gt;Given the wide adaption of &lt;em&gt;Spring Messaging&lt;/em&gt;, one way of benefiting from gRPC support is by embracing Spring&amp;rsquo;s &lt;code&gt;Message&lt;/code&gt;.&lt;br/&gt;Spring Cloud Function provides &lt;code&gt;GrpcSpringMessage&lt;/code&gt; schema modeled after Spring&amp;rsquo;s &lt;a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/messaging/Message.html"&gt;Message&lt;/a&gt;. It is internally converted to Spring Message to benefit from all of the existing support for &lt;em&gt;Spring Messaging&lt;/em&gt;. &lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;message GrpcSpringMessage {&#xD;
+    bytes payload = 1;&#xD;
+    map&amp;lt;string, string&amp;gt; headers = 2;&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It also defines a &lt;code&gt;MessagingService&lt;/code&gt; exposing four interaction models you can chose &lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;service MessagingService {&#xD;
+    rpc biStream(stream GrpcSpringMessage) returns (stream GrpcSpringMessage);&#xD;
+    &#xD;
+    rpc clientStream(stream GrpcSpringMessage) returns (GrpcSpringMessage);&#xD;
+    &#xD;
+    rpc serverStream(GrpcSpringMessage) returns (stream GrpcSpringMessage);&#xD;
+    &#xD;
+    rpc requestReply(GrpcSpringMessage) returns (GrpcSpringMessage);&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Both of these allow you to generate required stubs to support true plolyglot nature of gRPC while interacting with functions hosted by Spring Application Context. &lt;/p&gt;
+&lt;p&gt;Here is a quick example&lt;/p&gt;
+&lt;p&gt;Providing you have &lt;code&gt;spring-cloud-function-grpc&lt;/code&gt; on the classpath, here is your simplest application context configuration&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
+public static class SampleConfiguration {&#xD;
+    public static void main(String[] args) {&#xD;
+       SpringApplication.run(SampleConfiguration.class, args);&#xD;
+    }     &#xD;
+    @Bean&#xD;
+    public Function&amp;lt;String, String&amp;gt; uppercase() {&#xD;
+        return v -&amp;gt; v.toUpperCase();&#xD;
+    }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;(Note how nothing in the code above is even remotely related to gRPC, just a standard Spring-Boot app with function bean - the true value of Spring Cloud Function)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;And an example of one of the way you can invoke it via gRPC&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;Message&amp;lt;byte[]&amp;gt; message = MessageBuilder.withPayload(&amp;quot;\&amp;quot;hello gRPC\&amp;quot;&amp;quot;.getBytes())&#xD;
+            .setHeader(&amp;quot;foo&amp;quot;, &amp;quot;bar&amp;quot;)&#xD;
+            .build();&#xD;
+Message&amp;lt;byte[]&amp;gt; reply = GrpcUtils.requestReply(message);
+&lt;/code&gt;&lt;/pre&gt;&lt;h4&gt;&lt;a href="#em-protobuf-extensions-em" class="anchor" name="em-protobuf-extensions-em"&gt;&lt;/a&gt;&lt;em&gt;Protobuf Extensions&lt;/em&gt;&lt;/h4&gt;
+&lt;p&gt;While the core data object and its corresponding schema are modeled after Spring &lt;code&gt;Message&lt;/code&gt; and can represent virtually any object, there are times when you may want to plug-in your own schema and protobuf services. Spring Cloud Function supports it by allowing you to develop your own protobuf extensions.&lt;br/&gt;Such extension is just another spring-boot project that has dependency on &lt;code&gt;spring-cloud-function-grpc&lt;/code&gt; and must provide &lt;code&gt;protoc&lt;/code&gt; generated artifacts including implementation of &lt;code&gt;io.grpc.BindableService&lt;/code&gt; and implementation of &lt;code&gt;MessageConverter&lt;/code&gt; for your message schema. Spring Cloud Function will take care of the rest. In fact we provide one such extension for &lt;a href="https://github.com/spring-cloud/spring-cloud-function/tree/main/spring-cloud-function-adapters/spring-cloud-function-grpc-cloudevent-ext"&gt;CloudEvents&lt;/a&gt; out of the box already.&lt;/p&gt;
+&lt;p&gt;More details are available &lt;a href="https://github.com/spring-cloud/spring-cloud-function/tree/main/spring-cloud-function-adapters/spring-cloud-function-grpc"&gt;here&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#enhanced-cloudevents-support" class="anchor" name="enhanced-cloudevents-support"&gt;&lt;/a&gt;Enhanced CloudEvents Support&lt;/h2&gt;
+&lt;p&gt;Speaking of CloudEvents&amp;hellip; In version 3.1 we&amp;rsquo;ve introduces support for &lt;a href="https://cloudevents.io/"&gt;CloudEvents&lt;/a&gt; and you can read &lt;a href="https://spring.io/blog/2020/12/10/cloud-events-and-spring-part-1"&gt;part-1&lt;/a&gt; and &lt;a href="https://spring.io/blog/2020/12/10/cloud-events-and-spring-part-1"&gt;part-2&lt;/a&gt; of the blog posts on the subject.&lt;br/&gt;This release contains some additional enhancements and bug fixes as well as support for &lt;code&gt;io.cloudevents.CloudEvent&lt;/code&gt; type via integration with CloudEvents Java SDK. And to combine gRPC and CloudEvents we also provide a &lt;a href="https://github.com/spring-cloud/spring-cloud-function/tree/main/spring-cloud-function-samples/function-sample-grpc-cloudevent"&gt;dedicated example&lt;/a&gt; demonstrating CloudEvents interaction over gRPC.&lt;/p&gt;&lt;h2&gt;&lt;a href="#actuator-endpoint-into-functioncatalog" class="anchor" name="actuator-endpoint-into-functioncatalog"&gt;&lt;/a&gt;Actuator endpoint into FunctionCatalog&lt;/h2&gt;
+&lt;p&gt;By now you should be all familiar with &lt;code&gt;FunctionCatalog&lt;/code&gt; as one of the core components of Spring Cloud Function. But until now the only way of interacting with it was via direct reference.&lt;br/&gt;With this release we&amp;rsquo;ve exposed actuator endpoint that allows you to access it via &lt;code&gt;http://&amp;lt;host&amp;gt;:&amp;lt;port&amp;gt;/actuator/functions&lt;/code&gt; url.&lt;br/&gt;For example, after &lt;a href="https://docs.spring.io/spring-cloud-function/docs/3.2.1/reference/html/spring-cloud-function.html#function_visualization"&gt;enabling&lt;/a&gt; &lt;code&gt;functions&lt;/code&gt; endpoint you can:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;curl http://localhost:8080/actuator/functions
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;hellip;to see the output displaying the contents of your &lt;code&gt;FunctionCatalog&lt;/code&gt; and should look something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint text"&gt;{&amp;quot;charCounter&amp;quot;:&#xD;
+	{&amp;quot;type&amp;quot;:&amp;quot;FUNCTION&amp;quot;,&amp;quot;input-type&amp;quot;:&amp;quot;string&amp;quot;,&amp;quot;output-type&amp;quot;:&amp;quot;integer&amp;quot;},&#xD;
+ &amp;quot;logger&amp;quot;:&#xD;
+ 	{&amp;quot;type&amp;quot;:&amp;quot;CONSUMER&amp;quot;,&amp;quot;input-type&amp;quot;:&amp;quot;string&amp;quot;},&#xD;
+ &amp;quot;functionRouter&amp;quot;:&#xD;
+ 	{&amp;quot;type&amp;quot;:&amp;quot;FUNCTION&amp;quot;,&amp;quot;input-type&amp;quot;:&amp;quot;object&amp;quot;,&amp;quot;output-type&amp;quot;:&amp;quot;object&amp;quot;},&#xD;
+ &amp;quot;words&amp;quot;:&#xD;
+ 	{&amp;quot;type&amp;quot;:&amp;quot;SUPPLIER&amp;quot;,&amp;quot;output-type&amp;quot;:&amp;quot;string&amp;quot;}. . .
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#aws-api-gateway-v2-improved-custom-runtime-and-support-for-native-images" class="anchor" name="aws-api-gateway-v2-improved-custom-runtime-and-support-for-native-images"&gt;&lt;/a&gt;AWS - API Gateway v2, improved Custom Runtime and support for Native images&lt;/h2&gt;&lt;h4&gt;&lt;a href="#api-gateway-v2" class="anchor" name="api-gateway-v2"&gt;&lt;/a&gt;API Gateway v2&lt;/h4&gt;
+&lt;p&gt;Some of the users of Spring Cloud Function AWS integration already know that in 3.1.x we&amp;rsquo;ve migrated to a single AWS &lt;em&gt;handler&lt;/em&gt; model via &lt;code&gt;org.springframework.cloud.function.adapter.aws.FunctionInvoker&lt;/code&gt; to supports multiple AWS events. The main benefit of this approach is that you no longer need to provide a minimal implementation of AWS Handler (e.g., &lt;code&gt;RequestHandler&lt;/code&gt; or &lt;code&gt;RequestStreamHandler&lt;/code&gt; etc). All you need to do is implement your function as you would normally do and specify &lt;code&gt;org.springframework.cloud.function.adapter.aws.FunctionInvoker&lt;/code&gt; as handler when deploying it to AWS (see &lt;a href="https://docs.spring.io/spring-cloud-function/docs/3.2.1/reference/html/aws.html#_getting_started"&gt;Getting Started&lt;/a&gt; for more details).&lt;br/&gt;But &lt;em&gt;multiple&lt;/em&gt; does not imply &lt;em&gt;all&lt;/em&gt; and with this release we&amp;rsquo;ve added support for few more events, specifically &lt;code&gt;APIGatewayV2HTTPEvent&lt;/code&gt; and &lt;code&gt;APIGatewayV2HTTPResponse&lt;/code&gt;.&lt;/p&gt;&lt;h4&gt;&lt;a href="#aws-custom-runtime" class="anchor" name="aws-custom-runtime"&gt;&lt;/a&gt;AWS Custom Runtime&lt;/h4&gt;
+&lt;p&gt;Although mainly internal and not visible to the end user, it is worth mentioning about the additional improvements that were made to an already existing support of &lt;a href="https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html"&gt;AWS Custom Runtime&lt;/a&gt; which now relies on framework provided event loop.&lt;/p&gt;&lt;h4&gt;&lt;a href="#spring-native" class="anchor" name="spring-native"&gt;&lt;/a&gt;Spring Native&lt;/h4&gt;
+&lt;p&gt;And last but not least there were multiple improvements to support &lt;a href="https://github.com/spring-projects-experimental/spring-native"&gt;Spring Native&lt;/a&gt; initiative and with that we are pleased to be able to show case couple of AWS examples (&lt;a href="https://github.com/spring-projects-experimental/spring-native/tree/main/samples/cloud-function-aws"&gt;here&lt;/a&gt; and &lt;a href="https://github.com/spring-projects-experimental/spring-native/tree/main/samples/cloud-function-netty"&gt;here&lt;/a&gt;) that you can easily compile into native images and deploy to AWS and see significant performance improvements.&lt;br/&gt;For more details on AWS and Spring Native you can watch this &lt;a href="https://springone.io/2021/sessions/spring-cloud-function"&gt;Spring One presentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Questions - &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-function"&gt;https://stackoverflow.com/questions/tagged/spring-cloud-function&lt;/a&gt;&lt;br/&gt;Issue Tracker - &lt;a href="https://github.com/spring-cloud/spring-cloud-function/issues"&gt;https://github.com/spring-cloud/spring-cloud-function/issues&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Accelerate Spring Apps to Cloud at Scale - Discussion with Azure Spring Cloud Customers</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/01/accelerate-spring-apps-to-cloud-at-scale-discussion-with-azure-spring-cloud-customers" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-01:4628</id>
+    <updated>2021-12-01T18:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! I love the Azure Spring Cloud platform - jointly developed with the Spring team and Microsoft - and I&amp;rsquo;m not alone! So do its users! Check out this panel discussion moderated by Adib Sakali and Asir Selvasingh with Morgan Stanley, Bosch, and Digital Realty Trust. &lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wdwjqXTFFZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Authorization Server 0.2.1 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/01/spring-authorization-server-0-2-1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Joe Grandja</name>
+    </author>
+    <id>tag:spring.io,2021-12-01:4627</id>
+    <updated>2021-12-01T14:00:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the general availability of Spring Authorization Server 0.2.1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can download it from Maven Central by using the module coordinates:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="groovy"&gt;compile 'org.springframework.security:spring-security-oauth2-authorization-server:0.2.1'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-authorization-server/releases/tag/0.2.1"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://github.com/spring-projects/spring-authorization-server/tree/main/samples"&gt;sample&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; |  &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tips: @Controllers and RSocket</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/12/01/spring-tips-controllers-and-rsocket" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-12-01:4626</id>
+    <updated>2021-12-01T08:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment of &lt;a href="https://twitter.com/SpringTipsLive"&gt;Spring Tips (@SpringTipsLive)&lt;/a&gt;, we continue our tour of all things @Controller, this time focusing on the Spring support for RSocket. You might also want to watch the expanded discussion of RSocket in earlier &lt;a href="https://twitter.com/bit.ly/spring-tips-playlist"&gt;Spring Tips &lt;/a&gt; videos: &lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/13/premiering-the-rsocket-revolution"&gt;The RSocket Revolution&lt;/a&gt; - watch this next!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/01/02/spring-tips-rsocket"&gt;Raw RSocket support&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/04/15/spring-tips-rsocket-messaging-in-spring-boot-2-2"&gt;RSocket Messaging and the &lt;code&gt;@Controller&lt;/code&gt; component model&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/02/20/spring-tips-rsocket-and-spring-security"&gt;RSocket and Spring Security&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/06/30/spring-tips-spring-retrosocket"&gt;Spring Retrosocket&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/d4HAqS_VfkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - November 30th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/30/this-week-in-spring-november-30th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-11-30:4625</id>
+    <updated>2021-11-30T19:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This last week&amp;rsquo;s been nutty! Here in the US, we just celebrated the Thanksgiving holiday, and I am fat with turkey and pie, and lazy. But happy. I hope you&amp;rsquo;re well fed and happy, too. Time&amp;rsquo;s flying. (Also: can you believe we&amp;rsquo;re a month away from the new year? I think there&amp;rsquo;s like four or five weeks (and thus _This Week in Spring_s!) left in the year!) &lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve got a ton of stuff to get into this week, so let&amp;rsquo;s go:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/29/security-report-for-spring-amqp-spring-for-rabbitmq"&gt;Security Report for Spring AMQP (Spring for RabbitMQ)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/29/spring-boot-2-6-1-is-now-available"&gt;Spring Boot 2.6.1 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/11/29/spring-data-mongodb-relation-modelling"&gt;Spring Data MongoDB - Relation Modelling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/thymeleaf/status/1465598870113689600?s=12"&gt;Thymeleaf 3.0.13 now available! This new version includes security improvements, make sure to check the release notes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;In last week&amp;rsquo;s installmetn of &lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked about &lt;a href="https://spring.io/blog/2021/11/25/a-bootiful-podcast-reactive-system-and-functional-programming-legend-debasish-ghosh"&gt;reactive-systems with functional programming legend Debasish Ghosh&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Apache Cassandra project is working hard to &lt;a href="https://twitter.com/cassandra/status/1463814735451901961?s=12"&gt;officially support JDK 17 in the next Apache Cassandra major release.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love to see how far the JVM has come. One great indicator of its progress: its garbage collector. Check out this post on &lt;a href="https://kstefanj.github.io/2021/11/24/gc-progress-8-17.html"&gt;garbage collection progress from JDK 8 to JDK 17&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is so cool! There&amp;rsquo;s now an &lt;a href="https://ronekins.com/2021/11/11/getting-started-with-the-oracle-database-kubernetes-operator-part-1/"&gt;Oracle Database Kubernetes Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://openjdk.java.net/jeps/420"&gt;JEP 420: Pattern Matching for switch (Second Preview)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-october-2021/"&gt;Java on Visual Studio Code Update ? October 2021&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For a lot of folks, the days of using Docker Desktop for free are numbered. You might be interested in this blog on &lt;a href="http://kodeworx.net/posts/rancher_desktop_a_docker_desktop_replacement/"&gt;Rancher Desktop - A Docker Desktop Replacement &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Security Report for Spring AMQP (Spring for RabbitMQ)</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/29/security-report-for-spring-amqp-spring-for-rabbitmq" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2021-11-29:4624</id>
+    <updated>2021-11-29T17:11:25Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;The recently released versions of Spring AMQP (2.4.0, 2.3.12, 2.2.20) contain a fix for &lt;a href="https://tanzu.vmware.com/security/cve-2021-22095"&gt;CVE-2021-22095&lt;/a&gt;, which can cause a potential &lt;code&gt;OutOfMemoryError&lt;/code&gt; for very large messages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Boot version 2.6.0 and 2.5.7 will bring in the 2.4.0 and 2.3.12 versions of spring-amqp respectively. Users of Boot 2.4.x should override the &lt;code&gt;spring-amqp&lt;/code&gt; and &lt;code&gt;spring-rabbit&lt;/code&gt; versions to 2.3.12; users of Spring Boot 2.3.x should override the versions to 2.2.20.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+</feed>

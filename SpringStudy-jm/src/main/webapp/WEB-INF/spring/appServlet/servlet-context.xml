@@ -22,29 +22,25 @@
 	</beans:bean>
 	
 	<beans:bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-	
 		<beans:property name="driverClassName" value="org.mariadb.jdbc.Driver"></beans:property>
-		<beans:property name="url" value="jdbc:mariadb://localhost:8000/springstudy?useUnicode=true"></beans:property>
+		<beans:property name="url" value="jdbc:mariadb://127.0.0.1:8001/springstudy?useUnicode=true"></beans:property>
 		<beans:property name="username" value="root"></beans:property>
 		<beans:property name="password" value="toor"></beans:property>
-		
 	</beans:bean>
-	
 	
 	<beans:bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<beans:property name="dataSource" ref="dataSource"></beans:property>
 		<beans:property name="mapperLocations" value="classpath:mappers/*.xml"></beans:property>
 	</beans:bean>
-		
-	<beans:bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-		<beans:constructor-arg ref="sqlSessionFactory"></beans:constructor-arg>
 	
+	<beans:bean id="SqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<beans:constructor-arg ref="sqlSessionFactory"></beans:constructor-arg>
 	</beans:bean>
 	
 	<beans:bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<!-- 매핑될 자바 클래스들이 들어가게 될공간 -->
 		<beans:property name="basePackage" value="com.spring.study.domain"></beans:property>
 	</beans:bean>
+	
 	<context:component-scan base-package="com.spring.study" />
 	
 	

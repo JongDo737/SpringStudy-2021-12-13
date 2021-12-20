@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="/study/signin">로그인</a></br>
-<a href="/study/signup">회원가입</a></br>
+	<a href="/study/signin">로그인</a></br>
+	<a href="/study/signup">회원가입</a></br>
 </body>
 </html>
